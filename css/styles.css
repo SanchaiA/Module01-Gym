@@ -1,0 +1,135 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2b3541;
+}
+.header {
+  padding: 30px 0px;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: block;
+  background-image: url(../img/logo.svg);
+  width: 99px;
+  height: 29px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 54px;
+  padding-left: 0;
+  color: #2b3541;
+}
+.header-nav a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.soc-network {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  right: -15px;
+}
+.insta-icon:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.fb-icon:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0;
+}
+.banner {
+  margin-bottom: 103px;
+}
+.banner-box {
+  padding: 214px 0 0 0;
+}
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 125%;
+  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+.banner-info {
+  font-size: 40px;
+  margin: 45px 0 0 0;
+  letter-spacing: 0.02em;
+}
+.banner-text {
+  font-size: 18px;
+  width: 270px;
+  margin: 20px 0 35px 92px;
+  line-height: 150%;
+}
+.banner-link {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b3541;
+  padding: 22px 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #fbf138;
+  /**border: 1px solid #fbf138;**/
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+  transition: 0.3s;
+  margin-left: 93px;
+  position: absolute;
+}
+button {
+  padding: 0 0;
+  margin-top: 247px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+.banner-bg {
+  margin-top: 213px;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: -226px;
+  z-index: -1;
+  right: -75px;
+}
+.banner-gradient-left {
+  background: linear-gradient(
+    90deg,
+    #fbf138 0%,
+    rgba(253, 249, 182, 0.45) 145.23%
+  );
+  width: 29.4vw;
+  height: 850px;
+  opacity: 0.2;
+}
+.banner-gradient-right {
+  background: linear-gradient(
+    90deg,
+    #fdf9b6 0%,
+    rgba(253, 249, 182, 0.7) 166.81%
+  );
+  width: 13vw;
+  height: 157vh;
+  opacity: 0.2;
+}
+.banner-img {
+  position: absolute;
+  top: 39px;
+  right: -100px;
+  width: 988px;
+  height: 810px;
+}
