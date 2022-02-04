@@ -56,6 +56,11 @@ body {
   gap: 30px;
   align-items: center;
 }
+a.insta-icon,
+a.fb-icon {
+  width: 30px;
+  height: 30px;
+}
 .insta-icon:hover {
   transform: scale(1.26);
   transition: 0.5s;
@@ -74,12 +79,12 @@ body {
   height: 850px;
   margin-bottom: 153px;
 }
-.banner-box {
+.banner-content {
   max-width: 637px;
   max-height: 850px;
   padding: 216px 0 0;
 }
-.banner-left {
+.banner-box {
   max-width: 288px;
   margin-left: 92px;
 }
@@ -166,7 +171,6 @@ body {
   height: 810px;
 }
 .event-title {
-  font-size: 40px;
   margin-bottom: 42px;
   margin-left: -2px;
 }
@@ -233,13 +237,16 @@ body {
   margin: 29px 0 0 31px;
   opacity: 0.6;
 }
+h1 {
+  font-size: 40px;
+}
 h3 {
   display: block;
   width: 260px;
   font-size: 28px;
   font-weight: 700;
   line-height: 120%;
-  margin: 22px 0 61px 30px;
+  margin: 22px 0px 61px 30px;
 }
 .type {
   position: absolute;
@@ -273,6 +280,20 @@ h3 {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+.plan-title {
+  max-width: 300px;
+  margin: 0;
+  line-height: 125%;
+}
+.plan-period {
+  margin: 13px -6px 50px 0px;
+  max-width: 190px;
 }
 @media (min-width: 766px) {
   .header-burger {
