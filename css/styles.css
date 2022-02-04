@@ -118,6 +118,7 @@ body {
   transition: 0.3s;
   top: 2px;
   position: relative;
+  cursor: pointer;
 }
 .btn-down {
   border: none;
@@ -126,6 +127,7 @@ body {
   left: 15px;
   bottom: -244px;
   padding: 0 0;
+  cursor: pointer;
 }
 .banner-bg {
   display: flex;
