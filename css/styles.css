@@ -417,8 +417,27 @@ p.plan-item-text {
   gap: 20px;
 }
 .mail-input {
+  display: block;
   border: none;
   padding: 22px 160px 22px 20px;
+}
+.mail-input::placeholder {
+  color: rgba(43, 53, 65, 0.3);
+}
+.notice {
+  display: none;
+}
+.notice:focus {
+  outline: none;
+}
+.notice {
+  color: #ae0303;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.notice:disabled {
+  border: 1px solid #f3f3f3;
+  background: #f3f3f3;
 }
 .mail-btn {
   font-weight: 700;
