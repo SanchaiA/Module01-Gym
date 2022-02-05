@@ -528,7 +528,7 @@ a.mail-data {
 }
 .about {
   margin-top: 150px;
-  margin-bottom: 185px;
+  margin-bottom: 188px;
 }
 .about-box {
   max-width: 100%;
@@ -595,11 +595,72 @@ a.mail-data {
   line-height: 150%;
 }
 .footer {
+  background-color: #f3f3f3;
+  height: 150px;
+}
+.footer-box {
   display: flex;
   justify-content: space-between;
+  background-color: #f3f3f3;
+  align-items: flex-end;
+  margin: 0;
+  height: 75px;
 }
-footer.nav {
-  list-style: none;
+.footer-menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 74px;
+}
+.footer-logo {
+  display: block;
+  background-image: url(../img/logo.svg);
+  background-position: center;
+  width: 97px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 90px;
+  padding-left: 0;
+  color: #2b3541;
+  justify-content: space-between;
+  padding-top: 15px;
+  align-items: flex-end;
+  padding-top: 0;
+}
+ul.footer-nav {
+  margin: 0;
+}
+.footer-nav a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-nav a::after {
+  content: "";
+  width: 0;
+  display: block;
+  border-bottom: 1px solid transparent;
+}
+.footer-nav a.active::after {
+  width: 100%;
+}
+.header-nav a.active:hover:after {
+  border-bottom: 1px solid #2b3541;
+  transition: 1s;
+}
+.footer-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.footer-links a.insta-icon,
+.footer-links a.fb-icon {
+  width: 27px;
+  height: 27px;
 }
 @media (min-width: 766px) {
   .header-burger {
