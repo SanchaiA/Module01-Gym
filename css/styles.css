@@ -132,10 +132,15 @@ a.fb-icon {
   position: relative;
   cursor: pointer;
 }
+.banner-btn:hover {
+  color: #fbf138;
+  background-color: #2b3541;
+  box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
 .control {
   border: none;
-  background-color: transparent;
   position: absolute;
+  background-image: url(../img/arrow.svg);
   left: 15px;
   bottom: -244px;
   padding: 0 0;
@@ -425,19 +430,26 @@ p.plan-item-text {
   letter-spacing: 0.03em;
   background-color: #fbf138;
   border: none;
-  /**border: 1px solid #fbf138;**/
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
   cursor: pointer;
   padding: 23px 45px;
 }
-.agreement,
-a.mail-data {
+.mail-btn:hover {
+  color: #fbf138;
+  background-color: #2b3541;
+  box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
+.agreement {
+  margin-top: 10px;
+}
+label,
+.mail-data {
   font-size: 11px;
-  color: rgba(43, 53, 65, 1);
+  color: rgba(43, 53, 65, 0.5);
   margin-top: 17px;
 }
-.mail-data {
-  text-decoration: underline;
+.mail-data:hover {
+  color: #2b3541;
 }
 .mail-title {
   position: relative;
@@ -683,16 +695,16 @@ ul.footer-nav {
   width: 27px;
   height: 27px;
 }
-.footer-info p,
-a {
-  font-size: 14px;
-  color: rgba(43, 53, 65, 1);
-  margin-top: 13px;
-}
+.footer-rights,
+.footer-source-link,
 .footer-source {
+  font-size: 14px;
+  color: rgba(43, 53, 65, 0.5);
+}
+.footer-source-link {
   text-decoration: underline;
 }
-.footer-source:hover {
+.footer-source-link:hover {
   color: #2b3541;
 }
 .footer-info {
