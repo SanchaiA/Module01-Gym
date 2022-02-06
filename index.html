@@ -29,12 +29,11 @@
           </nav>
         </div>
         <div class="header-burger">
-          <a href="#" class="header-logo"></a>
           <button class="burger" onclick="openModal()"></button>
         </div>
         <div class="header-links">
           <a href="#", class="insta-icon"><img src="img/insta_icon.svg" alt="insta-icon"></a>
-          <a href="#", class="fb-icon"><img src="img/fb_icon.svg" alt="FB"></a>
+          <a href="#", class="fb-icon"><img src="img/fb_icon.svg" alt="fb-icon"></a>
         </div>
       </div>
     </div>
@@ -70,7 +69,7 @@
           <div class="box-gradient">
             <p class="date">29.06 - 4.07</p>
             <h3>Марафон выносливости</h3>
-            <a href='#' class="button">Участвовать</a>
+            <a href='#ModalWindow' class="button">Участвовать</a>
             <p class="type">марафон</p>
           </div>
         </div>
@@ -229,7 +228,7 @@
             Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите,
             что мы проводим не&nbspтолько онлайн-тренировки.
           </p>
-          <button type="button" class="mail-btn" href="">
+          <button type="button" class="mail-btn" onclick="openModalWindow()">
             Записаться
           </button>
         </div>
@@ -291,7 +290,7 @@
         </div>
         <div class="footer-links">
           <a href="#", class="footer-insta-icon"><img src="img/footer_insta_icon.svg" alt="insta-icon"></a>
-          <a href="#", class="footer-fb-icon"><img src="img/footer_fb_icon.svg" alt="FB"></a>
+          <a href="#", class="footer-fb-icon"><img src="img/footer_fb_icon.svg" alt="fb-icon"></a>
         </div>
       </div>
       <div class="footer-info">
@@ -300,6 +299,40 @@
       </div>
     </div>
   </footer>
+  <!--header-burger-->
+  <div id="modal" class="modal">
+    <a href='#' class="header-logo"></a>
+    <ul class="header-nav">
+      <li><a href="#eventGraphic" class="active">Мероприятия</a>
+      </li>
+      <li><a href="#planGrid" class="active">Расписание</a></li>
+      <li><a href="#aboutCompany" class="active">О компании</a></li>
+    </ul>
+    <button class="burger-close" onclick="closeModal()"></button>
+    <div class="header-burger-links">
+      <a href="#" , class="burger-insta-icon"><img src="img/IN26.svg" alt="insta-icon"></a>
+      <a href="#" , class="burger-fb-icon"><img src="img/FB26.svg" alt="fb-icon"></a>
+    </div>
+  </div>
+  <!--popup-->
+  <div id="modalWindow" class="popup">
+    <div class="popup-box">
+      <h2 class="popup-title">
+        Заявка на участие
+        «Марафон выносливости»
+      </h2>
+      <p class="popup-text">
+        Заполните все поля, и мы пришлем информацию в ближайшее время
+      </p>
+      <form class="popup-form">
+        <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+        <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+        <button type="submit" class="popup-btn">
+          отправить
+        </button>
+      </form>
+      <button class="popup-close" onclick="closeModalWindow()"></button>
+  </div>
   <script>
     // Smooth Scroll
     const links = document.querySelectorAll("a");
@@ -334,6 +367,27 @@
     behavior: "smooth"
     });
     }
+
+    // Menu
+
+    function openModal() {
+      document.getElementById("modal").style.top = "0px";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.top = "-400px";
+    }
+
+    // ModalWindow
+
+    function openModalWindow() {
+      document.getElementById("modalWindow").style.top = "0px";
+    }
+
+    function closeModalWindow() {
+      document.getElementById("modalWindow").style.top = "-800px";
+    }
+  
   </script>
 </body>
 
