@@ -18,13 +18,13 @@
  <header id="headerTop">
     <div class="container">
       <div class="header">
-        <div class="header-menu">
+        <div class="header-item">
           <a href='#' class="header-logo"></a>
           <nav>
             <ul class="header-nav">
-              <li><a href="#" class="active">Мероприятия</a></li>
-              <li><a href="#" class="active">Расписание</a></li>
-              <li><a href="#" class="active">О компании</a></li>
+              <li><a href="#eventGraphic" class="active">Мероприятия</a></li>
+              <li><a href="#planGrid" class="active">Расписание</a></li>
+              <li><a href="#aboutCompany" class="active">О компании</a></li>
             </ul>
           </nav>
         </div>
@@ -50,13 +50,14 @@
           <button href="#" class="banner-btn">узнать подробнее
           </button>
         </div>
-        <button href="eventGraphic" class="control">
+        <button href="#planGrid" class="btn-down">
+          <img src="/img/arrow.svg" alt="scroll-down">
         </button>
       </div>
       <div class="banner-bg">
         <div class="banner-gradient-left"></div>
         <div class="banner-gradient-right"></div>
-        <img class="banner-img" src="img/girl.png" alt="girl">
+        <img src="/img/girl.png" alt="" class="banner-img">
       </div>
     </div>
   </div>
@@ -92,7 +93,7 @@
       </div>
     </div>
   </section>
-  <section class="plan">
+  <section class="plan" id="planGrid">
     <div class="container">
       <div class="plan-header">
         <h1 class="plan-title">Расписание тренировок</h1>
@@ -217,7 +218,7 @@
       </div>
     </div>
   </section>
-  <section class="about"> 
+  <section class="about" id="aboutCompany"> 
     <div class="container">
       <div class="about-box">
         <div class="about-info">
@@ -228,7 +229,7 @@
             Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите,
             что мы проводим не&nbspтолько онлайн-тренировки.
           </p>
-          <button type="subscribe" class="mail-btn" href="">
+          <button type="button" class="mail-btn" href="">
             Записаться
           </button>
         </div>
@@ -279,9 +280,9 @@
           <a class="footer-logo"></a>
           <nav>
             <ul class="footer-nav">
-              <li><a href="#" class="active">Мероприятия</a></li>
-              <li><a href="#" class="active">Расписание</a></li>
-              <li><a href="#" class="active">О компании</a></li>
+              <li><a href="#eventGraphic" class="active">Мероприятия</a></li>
+              <li><a href="#planGrid" class="active">Расписание</a></li>
+              <li><a href="#aboutCompany" class="active">О компании</a></li>
             </ul>
           </nav>
         </div>
@@ -289,8 +290,8 @@
           <span>info@freefit.com</span>
         </div>
         <div class="footer-links">
-          <a href="#", class="insta-icon"><img src="img/insta_icon.svg" alt="insta-icon"></a>
-          <a href="#", class="fb-icon"><img src="img/fb_icon.svg" alt="FB"></a>
+          <a href="#", class="footer-insta-icon"><img src="img/footer_insta_icon.svg" alt="insta-icon"></a>
+          <a href="#", class="footer-fb-icon"><img src="img/footer_fb_icon.svg" alt="FB"></a>
         </div>
       </div>
       <div class="footer-info">
@@ -299,6 +300,41 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Smooth Scroll
+    const links = document.querySelectorAll("a");
+
+    for (const link of links) {
+      link.addEventListener("click", clickHandler);
+    }
+
+    function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+
+      document.querySelector(href).scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    // btn-down
+    window.onscroll = function () { scrollFunction() };
+    
+    const downbuttons = document.querySelectorAll(".btn-down");
+    
+    for (const upbutton of downbuttons) {
+    upbutton.addEventListener("click", clickHandler);
+    }
+    
+    function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    
+    document.querySelector(href).scrollIntoView({
+    behavior: "smooth"
+    });
+    }
+  </script>
 </body>
 
 </html>
