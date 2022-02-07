@@ -62,14 +62,17 @@
   </div>
   <section class="event" id="eventGraphic">
     <div class="container">
-      <h1 class="event-title">Ближайшие события
+      <h1 class="event-title">
+        Ближайшие события
       </h1>
       <div class="event-flex ">
         <div class="event-first">
           <div class="box-gradient">
             <p class="date">29.06 - 4.07</p>
             <h3>Марафон выносливости</h3>
-            <a href='#ModalWindow' class="button">Участвовать</a>
+            <button type="button" class="button" onclick="openModalWindow()">
+              Участвовать
+            </button>
             <p class="type">марафон</p>
           </div>
         </div>
@@ -77,7 +80,9 @@
           <div class="box-gradient">
             <p class="date">9.07</p>
             <h3>Как стать тренером?</h3>
-            <a href='#' class="button">Участвовать</a>
+            <button type="button" class="button" onclick="openModalWindow()">
+              Участвовать
+            </button>
             <p class="type">вебинар</p>
           </div>
         </div>
@@ -85,7 +90,9 @@
           <div class="box-gradient">
             <p class="date">15.07</p>
             <h3>Йога, как стиль жизни</h3>
-            <a href='#' class="button">Участвовать</a>
+            <button type="button" class="button" onclick="openModalWindow()">
+              Участвовать
+            </button>
             <p class="type">вебинар</p>
           </div>
         </div>
@@ -228,9 +235,7 @@
             Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите,
             что мы проводим не&nbspтолько онлайн-тренировки.
           </p>
-          <button type="button" class="mail-btn" onclick="openModalWindow()">
-            Записаться
-          </button>
+          <a href="#eventGraphic" class="mail-btn">Записаться</a>
         </div>
         <div class="about-img">
           <div class="about-box-gradient"></div>
@@ -317,21 +322,21 @@
   <!--popup-->
   <div id="modalWindow" class="popup">
     <div class="popup-box">
-      <h2 class="popup-title">
-        Заявка на участие
-        «Марафон выносливости»
-      </h2>
+      <h3 class="popup-title">
+        Заявка на участие «Марафон&nbspвыносливости»
+      </h3>
       <p class="popup-text">
         Заполните все поля, и мы пришлем информацию в ближайшее время
       </p>
-      <form class="popup-form">
-        <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
-        <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
-        <button type="submit" class="popup-btn">
-          отправить
-        </button>
-      </form>
-      <button class="popup-close" onclick="closeModalWindow()"></button>
+    </div>
+    <form class="popup-form">
+      <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+      <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+      <button type="submit" class="popup-btn">
+        отправить
+      </button>
+    </form>
+    <button class="popup-close" onclick="closeModalWindow()"></button>
   </div>
   <script>
     // Smooth Scroll
@@ -381,11 +386,11 @@
     // ModalWindow
 
     function openModalWindow() {
-      document.getElementById("modalWindow").style.top = "0px";
+      document.getElementById("modalWindow").style.top = "1200px";
     }
 
     function closeModalWindow() {
-      document.getElementById("modalWindow").style.top = "-800px";
+      document.getElementById("modalWindow").style.top = "-10000px";
     }
   
   </script>
