@@ -657,6 +657,9 @@ label,
   align-items: flex-end;
   padding-top: 0;
 }
+.footer-nav li:hover {
+  margin-top: -4px;
+}
 ul.footer-nav {
   margin: 0;
 }
@@ -664,18 +667,12 @@ ul.footer-nav {
   font-size: 14px;
   text-decoration: none;
 }
-.footer-nav a::after {
+.header-nav a.active::after {
   content: "";
-  width: 0;
+  width: 100%;
   display: block;
   border-bottom: 1px solid transparent;
-}
-.footer-nav a.active::after {
-  width: 100%;
-}
-.header-nav a.active:hover:after {
-  border-bottom: 1px solid #2b3541;
-  transition: 1s;
+  padding-top: 13px;
 }
 .footer-email-address {
   font-size: 16px;
@@ -699,7 +696,7 @@ ul.footer-nav {
 }
 .footer-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 .footer-insta-icon,
