@@ -903,6 +903,9 @@ ul.footer-nav {
   top: 30px;
   right: 30px;
 }
+.popup-close::after {
+  visibility: hidden;
+}
 /* Responsive*/
 @media (min-width: 766px) {
   .header-burger {
