@@ -54,6 +54,10 @@ p {
   border-bottom: 1px solid transparent;
   padding-top: 13px;
 }
+.header-nav a.active:hover {
+  border-bottom: 1px solid #2b3541;
+  padding-bottom: 13px;
+}
 .header-links {
   display: flex;
   gap: 30px;
@@ -658,7 +662,7 @@ label,
   padding-top: 0;
 }
 .footer-nav li:hover {
-  margin-top: -4px;
+  margin-top: -2px;
 }
 ul.footer-nav {
   margin: 0;
@@ -667,12 +671,16 @@ ul.footer-nav {
   font-size: 14px;
   text-decoration: none;
 }
-.header-nav a.active::after {
+.footer-nav a.active::after {
   content: "";
   width: 100%;
   display: block;
   border-bottom: 1px solid transparent;
-  padding-top: 13px;
+  padding-top: 5px;
+}
+.footer-nav a.active:hover {
+  border-bottom: 1px solid #2b3541;
+  padding-bottom: 5px;
 }
 .footer-email-address {
   font-size: 16px;
