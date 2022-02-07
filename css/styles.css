@@ -179,7 +179,7 @@ a.fb-icon {
   position: absolute;
   top: 39px;
   right: -100px;
-  width: 988px;
+  width: 125%;
   height: 95.5%;
   object-fit: cover;
 }
@@ -915,7 +915,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 1200px) {
-  .container {
-    max-width: ;
+  img.banner-img {
+    max-width: 90%;
+    max-height: 75%;
+    right: -40px;
   }
 }
