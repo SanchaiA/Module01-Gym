@@ -71,7 +71,7 @@
             <p class="date">29.06 - 4.07</p>
             <h3 class="event-name">Марафон выносливости</h3>
             <div class="button">
-              <a href="#" id="open-popup">Участвовать</a>
+              <a href="#" id="open-popup-1">Участвовать</a>
             </div>
             <p class="type">марафон</p>
           </div>
@@ -81,7 +81,7 @@
             <p class="date">9.07</p>
             <h3 class="event-name">Как стать тренером?</h3>
             <div class="button">
-              <a href="#" id="open-popup">Участвовать</a>
+              <a href="#" id="open-popup-2">Участвовать</a>
             </div>
             <p class="type">вебинар</p>
           </div>
@@ -91,7 +91,7 @@
             <p class="date">15.07</p>
             <h3 class="event-name">Йога, как стиль жизни</h3>
             <div class="button">
-              <a href="#" id="open-popup">Участвовать</a>
+              <a href="#" id="open-popup-3">Участвовать</a>
             </div>
             <p class="type">вебинар</p>
           </div>
@@ -319,11 +319,15 @@
       <a href="#" , class="burger-fb-icon"><img src="img/FB26.svg" alt="fb-icon"></a>
     </div>
   </div>
-  <div class="popup" id="popup">
+  <!--popup-1-->
+  <div class="popup" id="popup-1">
     <div class="popup-container">
       <div class="popup-body" id="popup-body">
         <h3 class="popup-title">
-          Заявка на участие «Марафон&nbspвыносливости»
+          Заявка на участие 
+        </h3>
+        <h3 class="popup-subtitle">
+          «Марафон&nbspвыносливости»
         </h3>
         <p class="popup-text">
           Заполните все поля, и мы пришлем информацию в ближайшее время
@@ -336,6 +340,54 @@
           </button>
         </form>
         <div class="popup-close" id="popup-close"></div>
+      </div>
+    </div>
+  </div>
+  <!--popup-2-->
+  <div class="popup" id="popup-2">
+    <div class="popup-container">
+      <div class="popup-body" id="popup-body">
+        <h3 class="popup-title">
+          Заявка на участие 
+        </h3>
+        <h3 class="popup-subtitle">
+          «Как стать тренером?»
+        </h3>
+        <p class="popup-text">
+          Заполните все поля, и мы пришлем информацию в ближайшее время
+        </p>
+        <form class="popup-form">
+          <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+          <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+          <button type="submit" class="popup-btn">
+            отправить
+          </button>
+        </form>
+        <div class="popup-close" id="popup-close-2"></div>
+      </div>
+    </div>
+  </div>
+  <!--popup-3-->
+  <div class="popup" id="popup-3">
+    <div class="popup-container">
+      <div class="popup-body" id="popup-body">
+        <h3 class="popup-title">
+          Заявка на участие 
+        </h3>
+        <h3 class="popup-subtitle">
+          «Йога как стиль жизни»
+        </h3>
+        <p class="popup-text">
+          Заполните все поля, и мы пришлем информацию в ближайшее время
+        </p>
+        <form class="popup-form">
+          <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+          <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+          <button type="submit" class="popup-btn">
+            отправить
+          </button>
+        </form>
+        <div class="popup-close" id="popup-close-3"></div>
       </div>
     </div>
   </div>
@@ -382,10 +434,11 @@
     function closeModal() {
       document.getElementById("modal").style.top = "-400px";
     }
-    // popup
-    const openPopUp = document.getElementById('open-popup');
+    // popup-1
+
+    const openPopUp = document.getElementById('open-popup-1');
     const closePopUp = document.getElementById('popup-close');
-    const popUp = document.getElementById('popup');
+    const popUp = document.getElementById('popup-1');
 
     openPopUp.addEventListener('click', function(e){
       e.preventDefault();
@@ -393,6 +446,33 @@
     })
     closePopUp.addEventListener('click', () => {
       popUp.classList.remove('active');
+    })
+    // popup-2
+
+    const openPopUp2 = document.getElementById('open-popup-2');
+    const closePopUp2 = document.getElementById('popup-close-2');
+    const popUp2 = document.getElementById('popup-2');
+
+    openPopUp2.addEventListener('click', function (e) {
+      e.preventDefault();
+      popUp2.classList.add('active');
+    })
+    closePopUp2.addEventListener('click', () => {
+      popUp2.classList.remove('active');
+    })
+
+    // popup-3
+
+    const openPopUp3 = document.getElementById('open-popup-3');
+    const closePopUp3 = document.getElementById('popup-close-3');
+    const popUp3 = document.getElementById('popup-3');
+
+    openPopUp3.addEventListener('click', function (e) {
+      e.preventDefault();
+      popUp3.classList.add('active');
+    })
+    closePopUp3.addEventListener('click', () => {
+      popUp3.classList.remove('active');
     })
   </script>
 </body>
