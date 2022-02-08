@@ -928,10 +928,3 @@ ul.footer-nav {
     display: none;
   }
 }
-@media (max-width: 1200px) {
-  img.banner-img {
-    max-width: 90%;
-    max-height: 75%;
-    right: -40px;
-  }
-}
