@@ -67,6 +67,8 @@ a.insta-icon,
 a.fb-icon {
   width: 30px;
   height: 30px;
+  outline: none;
+  border: none;
 }
 .insta-icon:hover {
   transform: scale(1.26);
@@ -92,7 +94,7 @@ a.fb-icon {
   padding: 220px 0 0;
 }
 .banner-box {
-  max-width: 288px;
+  max-width: 100%;
   margin-left: 92px;
 }
 .banner-title {
@@ -144,6 +146,7 @@ a.fb-icon {
   bottom: -267px;
   padding: 0 0;
   cursor: pointer;
+  outline: none;
 }
 .banner-bg {
   display: flex;
@@ -237,6 +240,7 @@ a.fb-icon {
   transition: 0.3s;
   cursor: pointer;
   position: relative;
+  outline: none;
 }
 .button a {
   font-weight: 700;
@@ -716,6 +720,8 @@ ul.footer-nav {
   display: flex;
   gap: 20px;
   align-items: center;
+  outline: none;
+  border: none;
 }
 .footer-insta-icon,
 .footer-fb-icon {
@@ -760,7 +766,7 @@ ul.footer-nav {
   cursor: pointer;
 }
 #modal {
-  max-width: 330px;
+  max-width: 360px;
   max-height: 360px;
   background-color: #f3f3f3;
   text-align: left;
@@ -770,7 +776,7 @@ ul.footer-nav {
   right: 0;
   margin: 0 auto 0;
   transition: 0.5s;
-  padding: 25px 10px;
+  padding: 25px 15px;
   box-sizing: border-box;
 }
 #modal .header-nav {
@@ -780,9 +786,6 @@ ul.footer-nav {
   align-items: baseline;
   gap: 22px;
   padding-top: 50px;
-}
-#modal .header-nav li:hover {
-  margin-top: 0px;
 }
 .burger-close {
   width: 22px;
@@ -796,12 +799,16 @@ ul.footer-nav {
   position: absolute;
   top: 25px;
   right: 10px;
+  outline: none;
+  border: none;
 }
 .header-burger-links {
   display: flex;
   gap: 20px;
   align-items: center;
   padding-left: 220px;
+  outline: none;
+  border: none;
 }
 .burger-insta-icon,
 .burger-fb-icon {
@@ -1103,7 +1110,7 @@ ul.footer-nav {
   }
 }
 @media (max-width: 766px) {
-  nav {
+  .header nav {
     display: none;
   }
   .plan {
@@ -1169,11 +1176,13 @@ ul.footer-nav {
   }
 }
 @media (max-width: 360px) {
+  .banner-btn {
+    padding: 22px 57px;
+  }
   .banner-img {
     max-width: 97%;
   }
-}
-@media (max-width: 360px) {
+
   .event-first,
   .event-second {
     width: 48%;
@@ -1198,5 +1207,8 @@ ul.footer-nav {
   .banner-img {
     max-width: 87%;
     max-height: 80%;
+  }
+  .banner-btn {
+    padding: 22px 68px;
   }
 }
