@@ -489,6 +489,7 @@ label,
   margin-top: 0;
   margin-bottom: 40px;
   margin-left: 6px;
+  text-align: center;
 }
 .mail-title::before {
   position: absolute;
@@ -1166,6 +1167,16 @@ ul.footer-nav {
   h3,
   p {
     font-size: 16px;
+  }
+  .mail-title {
+    position: relative;
+  }
+  .mail-title::before {
+    width: 31px;
+    height: 31px;
+    left: 15px;
+    top: -15px;
+    position: absolute;
   }
 }
 @media (max-width: 550px) {
