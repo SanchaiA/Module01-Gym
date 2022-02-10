@@ -1168,15 +1168,11 @@ ul.footer-nav {
   p {
     font-size: 16px;
   }
-  .mail-title {
-    position: relative;
-  }
   .mail-title::before {
     width: 31px;
     height: 31px;
     left: 15px;
     top: -15px;
-    position: absolute;
   }
 }
 @media (max-width: 550px) {
@@ -1226,6 +1222,9 @@ ul.footer-nav {
     max-height: 80%;
   }
   .banner-btn {
-    padding: 22px 68px;
+    padding: 22px 56px;
+  }
+  .mail-btn {
+    padding: 23px 94px;
   }
 }
