@@ -365,7 +365,7 @@ p.plan-item-text {
   border: none;
   background-color: #f3f3f3;
 }
-.plan-item-box:hover .plan-item-text {
+.plan-grid-item:hover .plan-item-text {
   max-height: 400px;
   margin-bottom: 45px;
 }
