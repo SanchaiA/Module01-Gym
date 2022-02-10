@@ -1042,15 +1042,15 @@ ul.footer-nav {
   .event-flex {
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .event-first,
   .event-second {
-    width: 45%;
+    width: 49%;
     height: 60vh;
   }
   .event-third {
-    width: 96%;
+    width: 100%;
     height: 60vh;
   }
   .about-box {
@@ -1100,10 +1100,78 @@ ul.footer-nav {
   nav {
     display: none;
   }
+  .plan {
+    margin-bottom: 95px;
+  }
+  .mail-form {
+    flex-direction: column;
+  }
+  .mail {
+    margin-bottom: 90px;
+  }
 }
 @media (max-width: 756px) {
   .plan-grid {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 667px) {
+  .event-first,
+  .event-second {
+    width: 49%;
+    height: 40vh;
+  }
+  .event-third {
+    width: 100%;
+    height: 40vh;
+  }
+  .banner-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .banner-title {
+    font-size: 26px;
+  }
+  .banner-info {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h3,
+  p {
+    font-size: 16px;
+  }
+  .event-name {
+    font-size: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .event-first,
+  .event-second {
+    width: 48%;
+    height: 37vh;
+  }
+}
+@media (max-width: 360px) {
+  .banner-img {
+    max-width: 97%;
+  }
+}
+@media (max-width: 360px) {
+  .event-first,
+  .event-second {
+    width: 48%;
+    height: 37vh;
+  }
+  .event-third {
+    width: 100%;
+    height: 40vh;
   }
 }
