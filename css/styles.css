@@ -1174,6 +1174,9 @@ ul.footer-nav {
     width: 48%;
     height: 37vh;
   }
+  .banner-img {
+    max-height: 80%;
+  }
 }
 @media (max-width: 360px) {
   .banner-btn {
