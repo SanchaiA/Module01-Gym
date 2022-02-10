@@ -1193,6 +1193,9 @@ ul.footer-nav {
   .banner-btn {
     padding: 22px 57px;
   }
+  .banner-bg {
+    gap: 10px;
+  }
   .banner-img {
     max-width: 97%;
   }
