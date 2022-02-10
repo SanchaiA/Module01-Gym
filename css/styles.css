@@ -246,22 +246,28 @@ a.fb-icon {
 .box-gradient:hover .button {
   opacity: 1;
 }
-.date {
-  font-weight: 700;
-  line-height: 150%;
-  margin: 29px 0 0 31px;
-  opacity: 0.6;
-}
 h1 {
   font-size: 40px;
 }
+.event-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 29px 100px 0 29px;
+}
+.date {
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
 .event-name {
-  width: 236px;
-  display: block;
   font-size: 28px;
   font-weight: 700;
   line-height: 120%;
-  margin: 22px 0px 40px 30px;
+  margin: 0;
+  margin-bottom: 42px;
 }
 .type {
   position: absolute;
@@ -1110,7 +1116,7 @@ ul.footer-nav {
     margin-bottom: 90px;
   }
   .header {
-    margin: 20px 0px;
+    margin: 25px 0px;
   }
 }
 @media (max-width: 756px) {
@@ -1133,6 +1139,9 @@ ul.footer-nav {
     margin-left: 0;
     margin-right: 0;
   }
+  .event-name {
+    font-size: 16px;
+  }
 }
 @media (max-width: 650px) {
   .banner-title {
@@ -1149,9 +1158,6 @@ ul.footer-nav {
   }
   h3,
   p {
-    font-size: 16px;
-  }
-  .event-name {
     font-size: 16px;
   }
 }
@@ -1176,5 +1182,21 @@ ul.footer-nav {
   .event-third {
     width: 100%;
     height: 40vh;
+  }
+  .event-box {
+    padding: 12px 0 0 16px;
+  }
+  .date {
+    margin: 0;
+    opacity: 0.6;
+    margin-bottom: 7px;
+  }
+  .event-name {
+    margin: 0;
+    margin-bottom: 42px;
+  }
+  .banner-img {
+    max-width: 87%;
+    max-height: 80%;
   }
 }
