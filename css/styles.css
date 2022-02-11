@@ -261,6 +261,9 @@ h1 {
   justify-content: space-between;
   padding: 29px 45px 0 29px;
 }
+.event-second .event-box {
+  padding: 29px 100px 0 29px;
+}
 .date {
   font-weight: 700;
   line-height: 150%;
@@ -1019,7 +1022,7 @@ ul.footer-nav {
   }
   .banner-img {
     max-width: 87%;
-    max-height: 87.5%;
+    max-height: 88%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -1056,6 +1059,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 1115px) {
+  .banne-bg {
+    gap: 10px;
+  }
   .about-favor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1155,7 +1161,7 @@ ul.footer-nav {
     margin-bottom: 40px;
   }
   .about-info {
-    width: 75%;
+    width: 100%;
   }
   .about-img {
     width: 100%;
