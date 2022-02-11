@@ -1211,13 +1211,9 @@ ul.footer-nav {
   .banner-title {
     font-size: 26px;
   }
-  .banner-info {
-    font-size: 26px;
-  }
+  .banner-info,
+  h1,
   h2 {
-    font-size: 26px;
-  }
-  h1 {
     font-size: 26px;
   }
   h3,
@@ -1245,6 +1241,19 @@ ul.footer-nav {
   }
   .banner-img {
     max-height: 81%;
+  }
+  .footer-nav a,
+  .footer-email-address {
+    font-size: 12px;
+  }
+  .footer-rights,
+  .footer-source {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-nav {
+    gap: 35px;
   }
 }
 @media (max-width: 392px) {
