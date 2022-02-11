@@ -1261,7 +1261,8 @@ ul.footer-nav {
     font-size: 12px;
   }
   .footer-rights,
-  .footer-source {
+  .footer-source,
+  .footer-source-link {
     font-size: 10px;
   }
 }
