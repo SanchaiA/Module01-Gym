@@ -1120,21 +1120,32 @@ ul.footer-nav {
   }
 }
 @media (max-width: 834px) {
+  .button span {
+    display: none;
+  }
+  .button a {
+    height: 100%;
+    width: 100%;
+  }
+  .button a::before {
+    content: url(../img/add.png);
+    height: 100%;
+    width: 100%;
+  }
+  .box-gradient {
+    position: relative;
+  }
   .button {
-    background-image: url(../img/add.png);
     background-repeat: no-repeat;
     background-color: #2b3541;
     border: none;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     opacity: 1;
-    bottom: -366px;
-    right: 58px;
-    left: 320px;
+    bottom: 0;
+    right: 0;
     margin: 0;
     padding: 0;
-    width: 47px;
-    height: 47px;
   }
   .box-gradient:hover .button {
     opacity: 1;
