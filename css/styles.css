@@ -1005,7 +1005,7 @@ ul.footer-nav {
   }
   .banner-bg {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     height: 85vw;
     max-width: 1150px;
     margin: 0;
@@ -1059,9 +1059,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 1115px) {
-  .banne-bg {
-    gap: 10px;
-  }
   .about-favor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
