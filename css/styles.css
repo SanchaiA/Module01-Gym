@@ -863,7 +863,7 @@ ul.footer-nav {
 .popup-body {
   position: absolute;
   top: 15%;
-  left: 35%;
+  left: 20%;
   margin: auto;
   width: 600px;
   height: 577px;
@@ -1218,6 +1218,11 @@ ul.footer-nav {
     font-size: 16px;
   }
 }
+@media (min-width: 650px) {
+  .plan-img-mob {
+    display: none;
+  }
+}
 @media (max-width: 650px) {
   .banner-title {
     font-size: 26px;
@@ -1233,6 +1238,9 @@ ul.footer-nav {
   }
   p.type {
     font-size: 12px;
+  }
+  .plan-img {
+    display: none;
   }
   .mail-title::before {
     width: 31px;
