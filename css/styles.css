@@ -575,15 +575,12 @@ label,
   margin-bottom: 188px;
   padding-top: 15px;
 }
-.about-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
 .about-box {
   max-width: 100%;
-  max-height: 410px;
+  max-height: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about-info {
   width: 50%;
@@ -606,7 +603,7 @@ p.about-text {
 .about-img {
   display: block;
   background-image: url(../img/about.png);
-  width: 580px;
+  width: 50%;
   height: 335px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -627,6 +624,7 @@ p.about-text {
   justify-content: space-between;
   gap: 45px;
   margin-top: 63px;
+  margin-bottom: 80px;
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
@@ -1049,11 +1047,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 1115px) {
-  .about-flex {
-  }
-  .about-img {
-    width: 50%;
-  }
   .about-favor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1098,7 +1091,6 @@ ul.footer-nav {
   }
   .about-box {
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: stretch;
     height: 100%;
   }
@@ -1138,16 +1130,12 @@ ul.footer-nav {
   .box-gradient:hover .type {
     opacity: 1;
   }
-  .about-img {
-    position: absolute;
-    position: absolute;
-    top: 580px;
-    left: 11px;
-    width: 97%;
-    margin-bottom: 100px;
+  .about-info {
+    width: 75%;
   }
-  .about-favour {
-    position: relative;
+  .about-img {
+    width: 100%;
+    order: 3;
   }
 }
 @media (max-width: 766px) {
@@ -1217,8 +1205,6 @@ ul.footer-nav {
   .about-favor {
     grid-template-columns: 1fr;
   }
-  .about-img {
-    top: 800px;
 }
 @media (max-width: 550px) {
   .event-first,
@@ -1240,7 +1226,6 @@ ul.footer-nav {
   .banner-img {
     max-width: 97%;
   }
-
   .event-first,
   .event-second {
     width: 48%;
