@@ -1069,10 +1069,13 @@ ul.footer-nav {
   }
 }
 @media (max-width: 1080px) {
+  .footer-content {
+    padding: 0;
+  }
   .footer-box {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
   }
   .footer-menu {
     flex-direction: column;
