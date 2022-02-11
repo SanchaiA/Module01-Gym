@@ -1136,6 +1136,7 @@ ul.footer-nav {
   .about-img {
     width: 100%;
     order: 3;
+    height: 445px;
   }
 }
 @media (max-width: 766px) {
@@ -1204,6 +1205,9 @@ ul.footer-nav {
   }
   .about-favor {
     grid-template-columns: 1fr;
+  }
+  .about-img {
+    height: 335px;
   }
 }
 @media (max-width: 550px) {
