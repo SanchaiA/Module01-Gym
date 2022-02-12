@@ -56,7 +56,6 @@ p {
   display: flex;
   gap: 30px;
   align-items: center;
-  opacity: 0.8;
 }
 a.insta-icon,
 a.fb-icon {
@@ -64,6 +63,7 @@ a.fb-icon {
   height: 30px;
   outline: none;
   border: none;
+  opacity: 0.8;
 }
 .insta-icon:hover {
   transform: scale(1.26);
