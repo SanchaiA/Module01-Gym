@@ -1263,7 +1263,7 @@ ul.footer-nav {
   .plan-grid-active-item .plan-item-box {
     display: grid;
     position: relative;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 17% 80%;
     grid-template-rows: 10% 10% 55%;
     max-width: 635px;
     max-height: 300px;
@@ -1282,7 +1282,7 @@ ul.footer-nav {
   }
   .plan-item-box {
     display: grid;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 17% 80%;
     grid-template-rows: 10% 10% 55%;
     max-width: 635px;
     max-height: 300px;
