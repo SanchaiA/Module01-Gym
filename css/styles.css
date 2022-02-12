@@ -420,8 +420,16 @@ p.plan-item-text {
   border: none;
   padding: 23px 22px 0px 30px;
 }
-.plan-item-text-visible {
-  overflow: visible;
+.plan-grid-active-item .plan-item-text {
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+.plan-grid-active-item .plan-item-box {
+  position: absolute;
+  bottom: 0;
+}
+.plan-grid-active-item {
+  position: relative;
 }
 .mail {
   background-color: #f3f3f3;
@@ -1044,7 +1052,7 @@ ul.footer-nav {
   }
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px 270px 270px;
+    grid-template-rows: 370px 280px 270px;
   }
   .plan-grid-item:nth-child(1) {
     grid-column: 1 / 2;
@@ -1230,6 +1238,9 @@ ul.footer-nav {
   }
   .plan-grid-item {
     padding: 20px 22px 0px 20px;
+  }
+  .plan-grid-active-item .plan-item-box {
+    position: relative;
   }
 }
 @media (max-width: 667px) {
