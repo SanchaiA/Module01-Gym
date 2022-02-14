@@ -57,22 +57,18 @@ p {
   gap: 30px;
   align-items: center;
 }
-a.insta-icon,
-a.fb-icon {
+.insta-icon,
+.fb-icon {
   width: 30px;
   height: 30px;
   outline: none;
   border: none;
   opacity: 0.8;
-}
-.insta-icon:hover {
-  transform: scale(1.26);
   transition: 0.5s;
-  opacity: 1;
 }
+.insta-icon:hover,
 .fb-icon:hover {
   transform: scale(1.26);
-  transition: 0.5s;
   opacity: 1;
 }
 .container {
@@ -238,7 +234,7 @@ a.fb-icon {
   border: none;
   transition: 0.3s;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   outline: none;
 }
 .button a {
@@ -275,14 +271,24 @@ h1 {
   margin: 0;
   margin-bottom: 42px;
 }
-.type {
+.rectangle.type {
+  margin: 0;
+}
+.rectangle {
+  width: 33%;
+  height: 8%;
+  border: none;
+  margin: auto;
+  background: #fbf138;
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #fbf138;
-  margin-bottom: 0;
-  padding: 10px 21px;
-  line-height: 150%;
+}
+.type {
+  color: #2b3541;
+  text-align: center;
+  font-size: 18px;
+  line-height: 240%;
 }
 .box-gradient:hover .type {
   opacity: 0;
@@ -1158,56 +1164,65 @@ ul.footer-nav {
     height: 60vh;
     background-image: url(../img/event/yoga_mob1.png);
   }
+  .event-third .rectangle {
+    width: 16%;
+  }
   .about-box {
     flex-wrap: wrap;
     align-items: stretch;
     height: 100%;
   }
 }
+@media (min-width: 834px) {
+  .button a img {
+    display: none;
+  }
+}
 @media (max-width: 834px) {
   .button span {
     display: none;
   }
-  .button a {
-    height: 100%;
-    width: 100%;
-  }
-  .button a::before {
-    content: url(../img/add.png);
-    height: 100%;
-    width: 100%;
-  }
-  .box-gradient {
-    position: relative;
-  }
   .button {
-    background-repeat: no-repeat;
-    background-color: #2b3541;
-    border: none;
     cursor: pointer;
     position: absolute;
     opacity: 1;
     bottom: 0;
     right: 0;
     margin: 0;
+    height: 7%;
+    width: 10%;
     padding: 0;
+  }
+  .event-third .button {
+    width: 5%;
+    height: 8%;
+  }
+  .button a img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
   }
   .box-gradient:hover .button {
     opacity: 1;
   }
-  .type {
-    margin-top: 0;
-    display: block;
-    position: absolute;
+  .rectangle {
     bottom: 0;
     left: 0;
-    background-color: #fbf138;
-    margin-bottom: 0;
-    padding: 10px 21px;
-    line-height: 150%;
-    margin-right: 240px;
+    position: absolute;
+    width: 33%;
+    height: 7%;
   }
-  .box-gradient:hover .type {
+  .type {
+    font-size: 16px;
+    line-height: 195%;
+  }
+  .event-third .rectangle {
+    width: 16%;
+  }
+  .box-gradient:hover .rectangle {
     opacity: 1;
   }
   .about {
@@ -1307,7 +1322,7 @@ ul.footer-nav {
     padding: 22px 150px;
   }
   .mail-btn {
-    padding: 23px 187spx;
+    padding: 23px 187px;
   }
   .event-first,
   .event-second {
@@ -1350,7 +1365,7 @@ ul.footer-nav {
   p {
     font-size: 16px;
   }
-  p.type {
+  .type {
     font-size: 12px;
   }
   .plan-period {
@@ -1405,11 +1420,23 @@ ul.footer-nav {
   }
 }
 @media (max-width: 550px) {
+  .button {
+    height: 7%;
+    width: 12%;
+  }
+  .event-third .button {
+    width: 6%;
+    height: 7%;
+  }
+  .button a img {
+    bottom: 3px;
+    right: 3px;
+  }
   .banner-btn {
     padding: 22px 65px;
   }
   .mail-btn {
-    padding: 23px 175px;
+    padding: 23px 153px;
   }
   .event-first,
   .event-second {
@@ -1437,13 +1464,30 @@ ul.footer-nav {
     padding: 22px 65px;
   }
   .mail-btn {
-    padding: 23px 152px;
+    padding: 23px 135px;
   }
   .footer-nav {
     gap: 35px;
   }
   .event-third .event-box {
     padding: 30px 135px 0px 30px;
+  }
+}
+@media (max-width: 436px) {
+  .type {
+    margin-right: 88px;
+  }
+  .event-third .type {
+    margin-right: 650px;
+  }
+  .rectangle {
+    width: 40%;
+  }
+}
+@media (max-width: 406px) {
+  .event-first .event-box,
+  .event-second .event-box {
+    padding: 10px 30px 0 15px;
   }
 }
 @media (max-width: 392px) {
@@ -1463,7 +1507,23 @@ ul.footer-nav {
     padding: 23px 109px;
   }
 }
+@media (max-width: 392px) {
+  .banner-title {
+    font-size: 20px;
+  }
+  .banner-info h1,
+  h2 {
+    font-size: 20px;
+  }
+  .banner-text {
+    font-size: 15px;
+  }
+}
 @media (max-width: 360px) {
+  .date,
+  .event-name {
+    font-size: 14px;
+  }
   .banner-btn {
     padding: 22px 48px;
   }
@@ -1473,17 +1533,26 @@ ul.footer-nav {
   .banner-img {
     max-width: 97%;
   }
+  .banner-info,
+  .plan-period,
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  .plan-period {
+    margin: 0;
+  }
+  .mail {
+    margin-bottom: 20px;
+  }
   .event-first,
   .event-second {
     width: 48%;
-    height: 37vh;
+    height: 30vh;
   }
   .event-third {
     width: 100%;
-    height: 40vh;
-  }
-  .event-box {
-    padding: 12px 0 0 16px;
+    height: 36vh;
   }
   .date {
     margin: 0;
@@ -1502,6 +1571,45 @@ ul.footer-nav {
     padding: 22px 56px;
   }
   .mail-btn {
-    padding: 23px 94px;
+    padding: 23px 72px;
+  }
+}
+@media (max-width: 320px) {
+  .burger {
+    margin-right: 20px;
+  }
+  .banner-btn {
+    padding: 22px 37px;
+  }
+  .event-first .event-box,
+  .event-second .event-box {
+    padding: 12px 0 0 10px;
+  }
+  .event-third .event-box {
+    padding: 12px 85px 0 16px;
+  }
+  .plan-item-box {
+    grid-template-columns: 15% 80%;
+    grid-template-rows: 15% 55%;
+  }
+  .mail-title::before {
+    left: 20px;
+    top: -16px;
+  }
+  label,
+  .mail-data {
+    font-size: 10px;
+  }
+  p.about-text {
+    margin-bottom: 110px;
+  }
+  .footer-nav {
+    gap: 20px;
+  }
+  .footer-flex {
+    gap: 100px;
+  }
+  .footer-links {
+    gap: 15px;
   }
 }
