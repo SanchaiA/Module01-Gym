@@ -519,7 +519,7 @@ label,
   border-radius: 100%;
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
   z-index: -1;
-  left: -35px;
+  left: -30px;
   top: -20px;
 }
 .checkbox:checked,
@@ -1445,6 +1445,9 @@ ul.footer-nav {
   .mail-btn {
     padding: 23px 153px;
   }
+  .mail-title::before {
+    left: 40px;
+  }
   .event-first,
   .event-second {
     width: 48%;
@@ -1476,6 +1479,9 @@ ul.footer-nav {
   .footer-nav {
     gap: 35px;
   }
+  .mail-title::before {
+    left: 7px;
+  }
 }
 @media (max-width: 436px) {
   .type {
@@ -1489,6 +1495,9 @@ ul.footer-nav {
   }
   .event-third .rectangle {
     width: 22%;
+  }
+  .mail-title::before {
+    left: 53px;
   }
 }
 @media (max-width: 406px) {
@@ -1516,8 +1525,6 @@ ul.footer-nav {
   .mail-btn {
     padding: 23px 109px;
   }
-}
-@media (max-width: 392px) {
   .banner-title {
     font-size: 20px;
   }
@@ -1527,6 +1534,9 @@ ul.footer-nav {
   }
   .banner-text {
     font-size: 15px;
+  }
+  .mail-title::before {
+    left: 35px;
   }
 }
 @media (max-width: 360px) {
@@ -1582,6 +1592,10 @@ ul.footer-nav {
   }
   .mail-btn {
     padding: 23px 72px;
+  }
+  .mail-title::before {
+    left: -15px;
+    top: -15px;
   }
 }
 @media (max-width: 320px) {
