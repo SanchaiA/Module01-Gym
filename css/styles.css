@@ -1189,13 +1189,13 @@ ul.footer-nav {
     bottom: 0;
     right: 0;
     margin: 0;
-    height: 7%;
-    width: 10%;
+    height: 6%;
+    width: 8%;
     padding: 0;
   }
   .event-third .button {
-    width: 5%;
-    height: 8%;
+    width: 4%;
+    height: 6%;
   }
   .button a img {
     display: block;
@@ -1203,7 +1203,7 @@ ul.footer-nav {
     height: 70%;
     position: absolute;
     bottom: 4px;
-    right: 5px;
+    right: 4px;
   }
   .box-gradient:hover .button {
     opacity: 1;
@@ -1213,11 +1213,11 @@ ul.footer-nav {
     left: 0;
     position: absolute;
     width: 33%;
-    height: 7%;
+    height: 6%;
   }
   .type {
     font-size: 16px;
-    line-height: 195%;
+    line-height: 150%;
   }
   .event-third .rectangle {
     width: 16%;
@@ -1426,7 +1426,7 @@ ul.footer-nav {
   }
   .event-third .button {
     width: 6%;
-    height: 7%;
+    height: 6%;
   }
   .button a img {
     bottom: 3px;
