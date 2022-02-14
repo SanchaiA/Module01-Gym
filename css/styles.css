@@ -1481,7 +1481,10 @@ ul.footer-nav {
     margin-right: 650px;
   }
   .rectangle {
-    width: 40%;
+    width: 50%;
+  }
+  .event-third .rectangle {
+    width: 22%;
   }
 }
 @media (max-width: 406px) {
