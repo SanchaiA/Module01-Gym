@@ -1320,6 +1320,9 @@ ul.footer-nav {
 }
 @media (max-width: 667px) {
   .rectangle {
+    height: 7%;
+  }
+  .event-third .rectangle {
     height: 6%;
   }
   .type {
