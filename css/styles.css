@@ -340,6 +340,7 @@ p.plan-item-title {
   margin: 13px 0px 50px 0px;
   max-width: 190px;
   font-size: 28px;
+  text-align: right;
 }
 .plan-grid {
   display: grid;
@@ -1074,7 +1075,7 @@ ul.footer-nav {
   }
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 370px 290px 250px;
+    grid-template-rows: 370px 300px 270px;
   }
   .plan-grid-item:nth-child(1) {
     grid-column: 1 / 2;
@@ -1350,9 +1351,6 @@ ul.footer-nav {
 @media (min-width: 650px) {
   .plan-img-mob {
     display: none;
-  }
-  .plan-period {
-    font-size: 26px;
   }
 }
 @media (max-width: 650px) {
