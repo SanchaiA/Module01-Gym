@@ -1205,20 +1205,20 @@ ul.footer-nav {
     right: 0;
     margin: 0;
     height: 6%;
-    width: 8%;
+    width: 12%;
     padding: 0;
   }
   .event-third .button {
-    width: 4%;
-    height: 4%;
+    width: 6%;
+    height: 6%;
   }
   .button a img {
     display: block;
     width: 70%;
     height: 70%;
     position: absolute;
-    bottom: 4px;
-    right: 4px;
+    bottom: 5px;
+    right: 6px;
   }
   .type {
     font-size: 16px;
@@ -1229,12 +1229,6 @@ ul.footer-nav {
   }
   .box-gradient:hover .button,
   .type {
-    opacity: 1;
-  }
-  .event-third .rectangle {
-    width: 16%;
-  }
-  .box-gradient:hover .rectangle {
     opacity: 1;
   }
   .about {
@@ -1422,10 +1416,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 550px) {
-  .button {
-    height: 7%;
-    width: 12%;
-  }
   .event-third .button {
     width: 6%;
     height: 6%;
