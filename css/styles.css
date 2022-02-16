@@ -291,24 +291,16 @@ h1 {
   font-size: 16px;
   color: #fbf138;
 }
-.rectangle.type {
-  margin: 0;
-}
-.rectangle {
-  width: 33%;
-  height: 5%;
-  border: none;
-  margin: auto;
-  background: #fbf138;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 .type {
+  background-color: #fbf138;
   color: #2b3541;
   text-align: center;
   font-size: 18px;
   line-height: 150%;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .box-gradient:hover .type {
   opacity: 0;
@@ -1065,22 +1057,23 @@ ul.footer-nav {
   .banner-bg {
     gap: 10px;
     max-width: 1150px;
-    height: 80vw;
+    height: 79vw;
     margin: 0 auto;
     position: relative;
     right: 0;
+    top: 0;
   }
   .banner-gradient-left {
     flex-grow: 1;
-    height: 103%;
+    height: 100%;
   }
   .banner-gradient-right {
     flex-basis: 30%;
-    height: 103%;
+    height: 100%;
   }
   .banner-img {
     width: 100%;
-    height: 100%;
+    height: 87%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -1227,16 +1220,16 @@ ul.footer-nav {
     bottom: 4px;
     right: 4px;
   }
-  .box-gradient:hover .button {
-    opacity: 1;
-  }
-  .rectangle {
-    left: 0;
-    position: absolute;
-    height: 4%;
-  }
   .type {
     font-size: 16px;
+    left: 0;
+    right: auto;
+    padding: 5px 10px;
+    opacity: 1;
+  }
+  .box-gradient:hover .button,
+  .type {
+    opacity: 1;
   }
   .event-third .rectangle {
     width: 16%;
@@ -1274,8 +1267,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 756px) {
-  .banner-img {
-  }
   .plan-grid {
     display: flex;
     flex-direction: column;
@@ -1339,11 +1330,13 @@ ul.footer-nav {
   }
 }
 @media (max-width: 667px) {
-  .banner-btn {
-    padding: 22px 150px;
-  }
-  .mail-btn {
-    padding: 23px 187px;
+  .banner-btn,
+  .sign-up-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   .event-third {
     height: 80vw;
@@ -1362,9 +1355,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 650px) {
-  .mail-btn {
-    padding: 23px 237px;
-  }
   .banner-title {
     font-size: 26px;
   }
@@ -1444,12 +1434,6 @@ ul.footer-nav {
     bottom: 3px;
     right: 3px;
   }
-  .banner-btn {
-    padding: 22px 65px;
-  }
-  .mail-btn {
-    padding: 23px 153px;
-  }
   .mail-title::before {
     left: 40px;
   }
@@ -1468,12 +1452,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 480px) {
-  .banner-btn {
-    padding: 22px 65px;
-  }
-  .mail-btn {
-    padding: 23px 115px;
-  }
   .footer-nav {
     gap: 35px;
   }
@@ -1482,12 +1460,6 @@ ul.footer-nav {
   }
 }
 @media (max-width: 436px) {
-  .rectangle {
-    width: 50%;
-  }
-  .event-third .rectangle {
-    width: 22%;
-  }
   .mail-title::before {
     left: 53px;
   }
@@ -1505,17 +1477,11 @@ ul.footer-nav {
   .banner-content {
     padding-top: 32px;
   }
-  .banner-btn {
-    padding: 22px 60px;
-  }
   .event {
     margin-bottom: 79px;
   }
   .event-title {
     margin-bottom: 22px;
-  }
-  .mail-btn {
-    padding: 23px 109px;
   }
   .banner-title {
     font-size: 20px;
@@ -1535,9 +1501,6 @@ ul.footer-nav {
   .date,
   .event-name {
     font-size: 14px;
-  }
-  .banner-btn {
-    padding: 22px 35px;
   }
   .banner-bg {
     gap: 10px;
@@ -1563,12 +1526,6 @@ ul.footer-nav {
     margin: 0;
     margin-bottom: 42px;
   }
-  .banner-btn {
-    padding: 22px 56px;
-  }
-  .mail-btn {
-    padding: 23px 72px;
-  }
   .mail-title::before {
     left: -15px;
     top: -15px;
@@ -1577,9 +1534,6 @@ ul.footer-nav {
 @media (max-width: 320px) {
   .burger {
     margin-right: 20px;
-  }
-  .banner-btn {
-    padding: 22px 37px;
   }
   .event-first .event-box,
   .event-second .event-box {
