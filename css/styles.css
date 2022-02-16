@@ -1059,7 +1059,7 @@ ul.footer-nav {
   .banner-bg {
     gap: 10px;
     max-width: 1150px;
-    height: 79vw;
+    height: 66vw;
     margin: 0 auto;
     position: relative;
     right: 0;
@@ -1075,7 +1075,7 @@ ul.footer-nav {
   }
   .banner-img {
     width: 100%;
-    height: 87%;
+    height: 95%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -1170,6 +1170,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 980px) {
+  .banner-img {
+    height: 94%;
+  }
   .about-box {
     flex-wrap: wrap;
     align-items: stretch;
@@ -1182,6 +1185,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 834px) {
+  .banner-img {
+    height: 93%;
+  }
   .event-flex {
     flex-wrap: wrap;
     gap: 10px;
@@ -1263,6 +1269,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 756px) {
+  .banner-img {
+    height: 93%;
+  }
   .plan-grid {
     display: flex;
     flex-direction: column;
@@ -1326,6 +1335,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 667px) {
+  .banner-img {
+    height: 91%;
+  }
   .banner-btn,
   .sign-up-btn {
     display: inline-block;
@@ -1418,6 +1430,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 550px) {
+  .banner-img {
+    height: 86.5%;
+  }
   .event-third .button {
     width: 6%;
     height: 6%;
@@ -1490,6 +1505,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 360px) {
+  .banner-img {
+    height: 83.5%;
+  }
   .date,
   .event-name {
     font-size: 14px;
@@ -1524,6 +1542,9 @@ ul.footer-nav {
   }
 }
 @media (max-width: 320px) {
+  .banner-img {
+    height: 81.5%;
+  }
   .burger {
     margin-right: 20px;
   }
