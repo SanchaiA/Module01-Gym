@@ -16,13 +16,13 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 .header-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 57.5%;
+  flex-basis: 57.7%;
 }
 .header-logo {
   display: block;
@@ -44,6 +44,7 @@ h1 {
 }
 .header-nav li:hover {
   margin-top: -4px;
+  transition: 0.4s;
 }
 .header-nav a::after {
   content: "";
@@ -52,7 +53,7 @@ h1 {
   border-bottom: 1px solid transparent;
 }
 .header-nav a:hover {
-  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
+  border-bottom: 1px solid rgba(43, 53, 65, 0.8);
   padding-bottom: 10px;
 }
 .header-links {
@@ -87,7 +88,7 @@ h1 {
 .banner-content {
   max-width: 637px;
   max-height: 850px;
-  padding: 220px 0 0;
+  padding: 232px 0 0;
 }
 .banner-box {
   max-width: 100%;
@@ -148,7 +149,7 @@ h1 {
   display: flex;
   gap: 20px;
   position: absolute;
-  top: -8px;
+  top: 5px;
   z-index: -1;
   right: -60px;
 }
@@ -261,20 +262,20 @@ h1 {
   line-height: 150%;
   margin: 0;
   opacity: 0.6;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .event-name {
   font-size: 28px;
   font-weight: 700;
   line-height: 120%;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 .button {
   opacity: 0;
   margin-left: 30px;
   margin-right: 116px;
-  padding: 22px 30px;
+  padding: 22px 40px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -316,6 +317,7 @@ h1 {
 }
 .plan-title {
   max-width: 300px;
+  line-height: 125%;
 }
 h1.plan-title {
   margin: 0;
@@ -345,7 +347,7 @@ p.plan-item-title {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgba(43, 53, 65, 0.2);
-  padding: 23px 22px 0px 30px;
+  padding: 18px 27px 0px 30px;
 }
 .plan-item-box {
   display: flex;
@@ -363,6 +365,7 @@ p.plan-item-title {
   overflow: hidden;
   max-height: 0;
   transition: 0.3s linear;
+  line-height: 150%;
 }
 p.plan-item-text {
   margin: 0;
@@ -373,7 +376,7 @@ p.plan-item-text {
 }
 .plan-grid-item:hover .plan-item-text {
   max-height: 400px;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 .plan-date {
   text-align: right;
@@ -416,7 +419,7 @@ p.plan-item-text {
 }
 .plan-grid-active-item .plan-item-text {
   max-height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .plan-grid-active-item .plan-item-box {
   position: absolute;
@@ -534,7 +537,6 @@ label,
   left: 0;
   top: calc(50% - 10px);
   background-color: #2b3541;
-  border-radius: 2px;
   border: 2px solid #2b3541;
 }
 /* Стили для псевдоэлемента after с изображением, когда пункт активен */
@@ -557,7 +559,7 @@ label,
   position: absolute;
   width: 16px;
   height: 16px;
-  left: -2px;
+  left: 0;
   top: calc(50% - 10px);
   background-color: transparent;
   border-radius: 2px;
@@ -603,7 +605,7 @@ label,
 }
 p.about-text {
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 55px;
 }
 .about-text {
   display: block;
@@ -641,7 +643,7 @@ p.about-text {
   border: none;
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
   cursor: pointer;
-  padding: 23px 45px;
+  padding: 23px 50px;
   transition: 0.3s;
 }
 .sign-up-btn:hover {
@@ -677,13 +679,14 @@ p.about-text {
 }
 .favor-text {
   line-height: 150%;
+  color: rgba(43, 53, 65, 0.6);
 }
 .footer {
   background-color: #f3f3f3;
   height: 100%;
 }
 .footer-content {
-  padding: 50px 0 20px 0px;
+  padding: 45px 0 20px 0px;
 }
 .footer-box {
   display: flex;
@@ -742,6 +745,7 @@ ul.footer-nav {
   display: flex;
   gap: 65px;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-email-address {
   font-size: 16px;
@@ -772,10 +776,10 @@ ul.footer-nav {
 .footer-fb-icon {
   width: 27px;
   height: 27px;
+  transition: 0.5s;
 }
 .footer-insta-icon:hover {
   transform: scale(1.2);
-  transition: 0.5s;
 }
 .footer-fb-icon:hover {
   transform: scale(1.2);
@@ -811,8 +815,8 @@ ul.footer-nav {
   cursor: pointer;
 }
 #modal {
-  max-width: 360px;
-  max-height: 360px;
+  width: 100%;
+  height: 360px;
   background-color: #f3f3f3;
   text-align: left;
   position: absolute;
@@ -826,7 +830,7 @@ ul.footer-nav {
 }
 #modal .header-nav {
   flex-direction: column;
-  max-width: 300px;
+  width: 100%;
   margin: 0;
   align-items: baseline;
   gap: 22px;
@@ -868,10 +872,11 @@ ul.footer-nav {
 .header-burger-links {
   display: flex;
   gap: 20px;
-  align-items: center;
-  padding-left: 220px;
+  align-items: right;
   outline: none;
   border: none;
+  position: absolute;
+  right: 13px;
 }
 .burger-insta-icon,
 .burger-fb-icon {
@@ -888,14 +893,14 @@ ul.footer-nav {
 }
 /*popup*/
 .popup {
-  display: none;
-  width: 100%;
-  height: 100%;
   position: fixed;
-  z-index: 2;
+  display: none;
   left: 0;
   top: 0;
   background-color: rgba(43, 53, 65, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 .popup.active {
   display: block;
@@ -918,6 +923,7 @@ ul.footer-nav {
   padding: 0 45px;
   top: 15%;
   left: 30%;
+  animation: fade 0.5s;
 }
 .popup-title {
   position: relative;
@@ -1017,8 +1023,9 @@ ul.footer-nav {
   background-repeat: no-repeat;
 }
 /* Responsive*/
-@media (min-width: 766px) {
-  .header-burger {
+@media (min-width: 769px) {
+  .header-burger,
+  #modal {
     display: none;
   }
 }
@@ -1068,6 +1075,7 @@ ul.footer-nav {
   .banner-gradient-left {
     flex-grow: 1;
     height: 100%;
+    max-width: 535px;
   }
   .banner-gradient-right {
     flex-basis: 30%;
@@ -1236,7 +1244,7 @@ ul.footer-nav {
     opacity: 1;
   }
   .box-gradient:hover .button,
-  .type {
+  .box-gradient:hover .type {
     opacity: 1;
   }
   .about {
@@ -1252,6 +1260,18 @@ ul.footer-nav {
   }
 }
 @media (max-width: 768px) {
+  .header-item {
+    flex-basis: 0;
+  }
+  .header-logo {
+    width: 78px;
+    height: 24px;
+  }
+  .insta-icon,
+  .fb-icon {
+    width: 26px;
+    height: 26px;
+  }
   .header nav {
     display: none;
   }
@@ -1285,20 +1305,20 @@ ul.footer-nav {
   .plan-date {
     margin-bottom: 0px;
   }
-  .plan-grid-active-item .plan-date {
-    margin-bottom: 60px;
-  }
   .plan-grid-item,
   .plan-grid-active-item {
-    padding: 25px 22px 20px 25px;
+    padding: 25px 22px 0px 25px;
+  }
+  .plan-grid-active-item .plan-item-text {
+    margin-bottom: 0;
   }
   .plan-grid-active-item .plan-item-box {
     display: grid;
     position: relative;
     grid-template-columns: 17% 80%;
     grid-template-rows: 10% 10% 55%;
-    max-width: 635px;
-    max-height: 300px;
+    max-width: 100%;
+    height: 100%;
   }
   .plan-grid-active-item .plan-item-box .plan-img {
     grid-column: 1 / 2;
@@ -1316,8 +1336,8 @@ ul.footer-nav {
     display: grid;
     grid-template-columns: 17% 80%;
     grid-template-rows: 10% 10% 55%;
-    max-width: 635px;
-    max-height: 300px;
+    max-width: 100%;
+    height: 100%;
     align-items: start;
     gap: 20px;
   }
@@ -1332,6 +1352,11 @@ ul.footer-nav {
   .plan-item-box .plan-item-text {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+  }
+}
+@media (max-width: 676px) {
+  .banner-title {
+    font-size: 46px;
   }
 }
 @media (max-width: 667px) {
@@ -1374,9 +1399,6 @@ ul.footer-nav {
   h3,
   p {
     font-size: 16px;
-  }
-  .type {
-    font-size: 12px;
   }
   .plan-period {
     margin: 0px 0px 50px 0px;
