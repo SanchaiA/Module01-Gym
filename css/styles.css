@@ -660,6 +660,7 @@ p.about-text {
   grid-row: 2 / 3;
   width: 115px;
   height: 15px;
+  align-content: start;
 }
 .sign-up-btn:hover {
   color: #fbf138;
@@ -909,33 +910,39 @@ ul.footer-nav {
   transition: 0.5s;
 }
 /*popup*/
-.popup {
+.popup .overlay {
   position: fixed;
   display: none;
   left: 0;
   top: 0;
   background-color: rgba(43, 53, 65, 0.4);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
-.popup.active {
-  display: block;
-}
-.popup-body {
+.popup .content {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 510px;
+  width: 600px;
   height: 575px;
   background-color: #f3f3f3;
   text-align: center;
   padding: 0 45px;
-  top: 15%;
-  left: 30%;
-  animation: fade 0.5s;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(0);
+  box-sizing: border-box;
+}
+.popup.active .overlay {
+  display: block;
+}
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
 }
 .popup-title {
   position: relative;
@@ -1033,19 +1040,6 @@ ul.footer-nav {
   background-image: url(../img/close.svg);
   cursor: pointer;
   background-repeat: no-repeat;
-}
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-.popup:target .popup-body {
-  transform: scale(1);
-  opacity: 1;
-}
-.popup-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 /* Responsive*/
 @media (min-width: 769px) {
@@ -1262,6 +1256,7 @@ ul.footer-nav {
     background-size: cover;
     right: 0;
     bottom: 0;
+    cursor: pointer;
   }
   .type {
     font-size: 14px;
@@ -1284,9 +1279,9 @@ ul.footer-nav {
     width: 100%;
   }
   .about-img {
-    width: 100%;
+    background-size: cover;
     order: 4;
-    height: 445px;
+    height: 54vw;
   }
   .about-box-gradient {
     height: 100%;

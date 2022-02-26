@@ -81,10 +81,10 @@
               <p class="date">29.06 - 4.07</p>
               <h3 class="event-name">Марафон выносливости</h3>
             </div>
-            <button class="button" onclick="openPopup">Участвовать
+            <button class="button" onclick="togglePopup()">Участвовать
             </button>
             <div class="type">марафон</div>
-            <button class="button-plus" onclick="openPopup"></button>
+            <button class="button-plus" onclick="togglePopup()"></button>
           </div>
         </div>
         <div class="event-second">
@@ -93,10 +93,10 @@
               <p class="date">9.07</p>
               <h3 class="event-name">Как стать тренером?</h3>
             </div>
-            <button class="button">Участвовать
+            <button class="button" onclick="togglePopup()">Участвовать
             </button>
             <div class="type">вебинар</div>
-            <button class="button-plus"></button>
+            <button class="button-plus" onclick="togglePopup()"></button>
           </div>
         </div>
         <div class="event-third">
@@ -105,10 +105,10 @@
               <p class="date">15.07</p>
               <h3 class="event-name">Йога, как стиль жизни</h3>
             </div>
-            <button class="button">Участвовать
+            <button class="button" onclick="togglePopup()">Участвовать
             </button>
             <div class="type">вебинар</div>
-            <button class="button-plus"></button>
+            <button class="button-plus" onclick="togglePopup()"></button>
           </div>
         </div>
       </div>
@@ -267,7 +267,7 @@
             что мы проводим не&nbsp;только онлайн-тренировки.
           </p>
         </div>
-        <a href="#eventGraphic" class="sign-up-btn">
+        <a href="#eventGraphic" class="sign-up-btn"  onclick="togglePopup()">
           Записаться
         </a>
         <div class="about-img">
@@ -358,74 +358,74 @@
   </div>
   <!--popup-1-->
   <div id="popup-1" class="popup">
-    <div class="popup-container">
-      <div class="popup-body" id="popup-body">
-        <h3 class="popup-title">
-          Заявка на участие 
-        </h3>
-        <h3 class="popup-subtitle">
-          «Марафон&nbsp;выносливости»
-        </h3>
-        <p class="popup-text">
-          Заполните все поля, и мы пришлем информацию в ближайшее время
-        </p>
-        <form class="popup-form">
-          <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
-          <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
-          <button type="submit" class="popup-btn">
-            отправить
-          </button>
-        </form>
-        <button class="popup-close" id="popup-close"></button>
-      </div>
+    <div class="overlay">
+    <div class="content">
+      <h3 class="popup-title">
+        Заявка на участие 
+      </h3>
+      <h3 class="popup-subtitle">
+        «Марафон&nbsp;выносливости»
+      </h3>
+      <p class="popup-text">
+        Заполните все поля, и мы пришлем информацию в ближайшее время
+      </p>
+      <form class="popup-form">
+        <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+        <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+        <button type="submit" class="popup-btn">
+          отправить
+        </button>
+      </form>
+      <div class="popup-close" id="popup-close" onclick="togglePopup()">&times;</div>
+    </div>
     </div>
   </div>
   <!--popup-2-->
   <div id="popup-2" class="popup">
-    <div class="popup-container">
-      <div class="popup-body" id="popup-body">
-        <h3 class="popup-title">
-          Заявка на участие 
-        </h3>
-        <h3 class="popup-subtitle">
-          «Как стать тренером?»
-        </h3>
-        <p class="popup-text">
-          Заполните все поля, и мы пришлем информацию в ближайшее время
-        </p>
-        <form class="popup-form">
-          <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
-          <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
-          <button type="submit" class="popup-btn">
-            отправить
-          </button>
-        </form>
-        <div class="popup-close" id="popup-close-2"></div>
-      </div>
+    <div class="overlay">
+    <div class="content">
+      <h3 class="popup-title">
+        Заявка на участие 
+      </h3>
+      <h3 class="popup-subtitle">
+        «Как стать тренером?»
+      </h3>
+      <p class="popup-text">
+        Заполните все поля, и мы пришлем информацию в ближайшее время
+      </p>
+      <form class="popup-form">
+        <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+        <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+        <button type="submit" class="popup-btn">
+          отправить
+        </button>
+      </form>
+      <div class="popup-close" id="popup-close-2" onclick="togglePopup()"></div>
+    </div>
     </div>
   </div>
   <!--popup-3-->
   <div id="popup-3" class="popup">
-    <div class="popup-container">
-      <div class="popup-body" id="popup-body">
-        <h3 class="popup-title">
-          Заявка на участие 
-        </h3>
-        <h3 class="popup-subtitle">
-          «Йога как стиль жизни»
-        </h3>
-        <p class="popup-text">
-          Заполните все поля, и мы пришлем информацию в ближайшее время
-        </p>
-        <form class="popup-form">
-          <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
-          <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
-          <button type="submit" class="popup-btn">
-            отправить
-          </button>
-        </form>
-        <div class="popup-close" id="popup-close-3"></div>
-      </div>
+    <div class="overlay">
+    <div class="content">
+      <h3 class="popup-title">
+        Заявка на участие 
+      </h3>
+      <h3 class="popup-subtitle">
+        «Йога как стиль жизни»
+      </h3>
+      <p class="popup-text">
+        Заполните все поля, и мы пришлем информацию в ближайшее время
+      </p>
+      <form class="popup-form">
+        <input type="email" placeholder="Ваш e-mail" required id="#" class="popup-mail-input">
+        <input type="tel" placeholder="Ваш номер телефона" required id="#" class="tel-input">
+        <button type="submit" class="popup-btn">
+          отправить
+        </button>
+      </form>
+      <div class="popup-close" id="popup-close-3" onclick="togglePopup()"></div>
+    </div>
     </div>
   </div>
   <script>
@@ -473,31 +473,10 @@
     }
     // popup-1
 
-    function openPopup() {
-      document.getElementById("popup-open").style.top = "0px";
+    function togglePopup() {
+      document.getElementById("popup-1").classList.toggle("active")
     }
-
-    function closePopup() {
-      document.getElementById("popup-close").style.top = "-400px";
-    }
-    // popup-2 
-
-    function openPopup() {
-      document.getElementById("popup-open").style.top = "0px";
-    }
-
-    function closePopup() {
-      document.getElementById("popup-close").style.top = "-400px";
-    }
-    // popup-1
-
-    function openPopup() {
-      document.getElementById("popup-open").style.top = "0px";
-    }
-
-    function closePopup() {
-      document.getElementById("popup-close").style.top = "-400px";
-    }
+  
   </script>
 </body>
 
