@@ -1462,6 +1462,9 @@ ul.footer-nav {
     left: 25px;
     top: -18px;
   }
+  .popup .content {
+    padding: 0 15px;
+  }
 }
 @media (min-width: 650px) {
   .plan-img-mob {
