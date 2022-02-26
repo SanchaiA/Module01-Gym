@@ -16,7 +16,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 0px;
+  margin: 15px 0px;
 }
 .header-item {
   display: flex;
@@ -93,7 +93,7 @@ h1 {
 .banner-content {
   max-width: 637px;
   max-height: 850px;
-  padding: 237px 0 0;
+  padding: 227px 0 0;
 }
 .banner-box {
   max-width: 100%;
@@ -154,7 +154,7 @@ h1 {
   display: flex;
   gap: 20px;
   position: absolute;
-  top: 11px;
+  top: 0;
   z-index: -1;
   right: -60px;
 }
