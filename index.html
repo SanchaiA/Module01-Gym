@@ -41,8 +41,8 @@
           <button class="burger" onclick="openModal()"></button>
         </div>
         <div class="header-links">
-          <a href="#" class="insta-icon"><img src="img/insta_icon.svg" alt="insta-icon"></a>
-          <a href="#" class="fb-icon"><img src="img/fb_icon.svg" alt="fb-icon"></a>
+          <a href="#" class="insta-icon"></a>
+          <a href="#" class="fb-icon"></a>
         </div>
       </div>
     </div>
@@ -81,10 +81,10 @@
               <p class="date">29.06 - 4.07</p>
               <h3 class="event-name">Марафон выносливости</h3>
             </div>
-            <div class="button">
-              <a href="#" id="open-popup-1"><img src="./img/add.png" alt="plus"><span>Участвовать</span></a>
-            </div>
+            <button class="button" onclick="openPopup">Участвовать
+            </button>
             <div class="type">марафон</div>
+            <button class="button-plus" onclick="openPopup"></button>
           </div>
         </div>
         <div class="event-second">
@@ -93,10 +93,10 @@
               <p class="date">9.07</p>
               <h3 class="event-name">Как стать тренером?</h3>
             </div>
-            <div class="button">
-              <a href="#" id="open-popup-2"><img src="./img/add.png" alt="plus"><span>Участвовать</span></a>
-            </div>
+            <button class="button">Участвовать
+            </button>
             <div class="type">вебинар</div>
+            <button class="button-plus"></button>
           </div>
         </div>
         <div class="event-third">
@@ -105,10 +105,10 @@
               <p class="date">15.07</p>
               <h3 class="event-name">Йога, как стиль жизни</h3>
             </div>
-            <div class="button">
-              <a href="#" id="open-popup-3"><img src="./img/add.png" alt="plus"><span>Участвовать</span></a>
-            </div>
+            <button class="button">Участвовать
+            </button>
             <div class="type">вебинар</div>
+            <button class="button-plus"></button>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
               Силовой микс
             </p>
             <p class="plan-item-text">
-              Упражнения помогут создать красивый рельеф и помочь прийти&nbsp;в спортивную форму.
+              Упражнения помогут создать красивый рельеф и прийти&nbsp;в спортивную форму.
             </p>
           </div>
         </div>
@@ -248,7 +248,7 @@
         <div class="agreement">
           <input type="checkbox" id="01" class="checkbox">
           <label for="01">Согласен с обработкой
-            <a href="https://annblok.ru/workshop" target="_blank" class="mail-data"><u>персональных данных</u>
+            <a href="https://annblok.ru/workshop" target="_blank" class="mail-data">персональных данных
             </a>
           </label>
         </div>
@@ -357,7 +357,7 @@
     </div>
   </div>
   <!--popup-1-->
-  <div class="popup" id="popup-1">
+  <div id="popup-1" class="popup">
     <div class="popup-container">
       <div class="popup-body" id="popup-body">
         <h3 class="popup-title">
@@ -376,12 +376,12 @@
             отправить
           </button>
         </form>
-        <div class="popup-close" id="popup-close"></div>
+        <button class="popup-close" id="popup-close"></button>
       </div>
     </div>
   </div>
   <!--popup-2-->
-  <div class="popup" id="popup-2">
+  <div id="popup-2" class="popup">
     <div class="popup-container">
       <div class="popup-body" id="popup-body">
         <h3 class="popup-title">
@@ -405,7 +405,7 @@
     </div>
   </div>
   <!--popup-3-->
-  <div class="popup" id="popup-3">
+  <div id="popup-3" class="popup">
     <div class="popup-container">
       <div class="popup-body" id="popup-body">
         <h3 class="popup-title">
@@ -473,44 +473,31 @@
     }
     // popup-1
 
-    const openPopUp = document.getElementById('open-popup-1');
-    const closePopUp = document.getElementById('popup-close');
-    const popUp = document.getElementById('popup-1');
+    function openPopup() {
+      document.getElementById("popup-open").style.top = "0px";
+    }
 
-    openPopUp.addEventListener('click', function(e){
-      e.preventDefault();
-      popUp.classList.add('active');
-    })
-    closePopUp.addEventListener('click', () => {
-      popUp.classList.remove('active');
-    })
-    // popup-2
+    function closePopup() {
+      document.getElementById("popup-close").style.top = "-400px";
+    }
+    // popup-2 
 
-    const openPopUp2 = document.getElementById('open-popup-2');
-    const closePopUp2 = document.getElementById('popup-close-2');
-    const popUp2 = document.getElementById('popup-2');
+    function openPopup() {
+      document.getElementById("popup-open").style.top = "0px";
+    }
 
-    openPopUp2.addEventListener('click', function (e) {
-      e.preventDefault();
-      popUp2.classList.add('active');
-    })
-    closePopUp2.addEventListener('click', () => {
-      popUp2.classList.remove('active');
-    })
+    function closePopup() {
+      document.getElementById("popup-close").style.top = "-400px";
+    }
+    // popup-1
 
-    // popup-3
+    function openPopup() {
+      document.getElementById("popup-open").style.top = "0px";
+    }
 
-    const openPopUp3 = document.getElementById('open-popup-3');
-    const closePopUp3 = document.getElementById('popup-close-3');
-    const popUp3 = document.getElementById('popup-3');
-
-    openPopUp3.addEventListener('click', function (e) {
-      e.preventDefault();
-      popUp3.classList.add('active');
-    })
-    closePopUp3.addEventListener('click', () => {
-      popUp3.classList.remove('active');
-    })
+    function closePopup() {
+      document.getElementById("popup-close").style.top = "-400px";
+    }
   </script>
 </body>
 

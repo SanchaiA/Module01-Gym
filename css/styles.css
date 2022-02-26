@@ -69,6 +69,12 @@ h1 {
   opacity: 0.8;
   transition: 0.5s;
 }
+.fb-icon {
+  background-image: url(../img/fb_icon.svg);
+}
+.insta-icon {
+  background-image: url(../img/insta_icon.svg);
+}
 .insta-icon:hover,
 .fb-icon:hover {
   transform: scale(1.26);
@@ -87,7 +93,7 @@ h1 {
 .banner-content {
   max-width: 637px;
   max-height: 850px;
-  padding: 232px 0 0;
+  padding: 237px 0 0;
 }
 .banner-box {
   max-width: 100%;
@@ -148,7 +154,7 @@ h1 {
   display: flex;
   gap: 20px;
   position: absolute;
-  top: 5px;
+  top: 11px;
   z-index: -1;
   right: -60px;
 }
@@ -183,7 +189,7 @@ h1 {
   background-size: contain;
 }
 .event {
-  margin-bottom: 157px;
+  margin-bottom: 160px;
 }
 .event-title {
   margin-bottom: 42px;
@@ -285,11 +291,12 @@ h1 {
   cursor: pointer;
   position: absolute;
   outline: none;
-}
-.button a {
   font-weight: 700;
   font-size: 16px;
   color: #fbf138;
+}
+.button-plus {
+  display: none;
 }
 .type {
   background-color: #fbf138;
@@ -307,12 +314,11 @@ h1 {
 }
 .plan {
   margin-bottom: 160px;
-  padding-top: 5px;
 }
 .plan-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 .plan-title {
   max-width: 300px;
@@ -325,9 +331,8 @@ h1.plan-title {
   max-width: 300px;
   margin: 0;
   line-height: 125%;
-}
-p.plan-item-title {
-  margin: 0;
+  margin-top: 15px;
+  font-weight: 700;
 }
 .plan-period {
   margin: 13px 0px 50px 0px;
@@ -346,19 +351,15 @@ p.plan-item-title {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgba(43, 53, 65, 0.2);
-  padding: 18px 27px 0px 30px;
+  padding: 20px 27px 0px 30px;
 }
 .plan-item-box {
   display: flex;
   max-width: 300px;
   max-height: 500px;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   justify-content: end;
-}
-.plan-item-title {
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 .plan-item-text {
   overflow: hidden;
@@ -493,8 +494,12 @@ label,
   color: rgba(43, 53, 65, 0.5);
   margin-top: 17px;
 }
+.mail-data {
+  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
+}
 .mail-data:hover {
   color: #2b3541;
+  border-bottom: 1px solid #2b3541;
 }
 .mail-title {
   position: relative;
@@ -622,7 +627,7 @@ p.about-text {
   display: block;
   background-image: url(../img/about.png);
   width: 100%;
-  height: 335px;
+  height: 27vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -917,11 +922,6 @@ ul.footer-nav {
 .popup.active {
   display: block;
 }
-.pop-up-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
 .popup-body {
   position: absolute;
   display: flex;
@@ -1034,6 +1034,19 @@ ul.footer-nav {
   cursor: pointer;
   background-repeat: no-repeat;
 }
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup-body {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 /* Responsive*/
 @media (min-width: 769px) {
   .header-burger,
@@ -1063,24 +1076,30 @@ ul.footer-nav {
     right: 4%;
   }
 }
+
 @media (max-width: 1200px) {
   .header nav {
     margin-left: 30px;
   }
   .banner {
     max-height: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 215px;
   }
   .banner-content {
-    padding-top: 75px;
+    padding-top: 185px;
     margin-bottom: 75px;
+  }
+  .banner-title {
+    font-size: 35px;
+  }
+  .btn-down {
+    bottom: -185px;
   }
   .banner-bg {
     gap: 10px;
     max-width: 1150px;
-    height: 66vw;
+    height: 57vw;
     margin: 0 auto;
-    position: relative;
     right: 0;
     top: 0;
   }
@@ -1090,20 +1109,17 @@ ul.footer-nav {
     max-width: 535px;
   }
   .banner-gradient-right {
-    flex-basis: 30%;
+    flex-basis: 41%;
     height: 100%;
   }
   .banner-img {
     width: 100%;
-    height: 95%;
+    height: 93.5%;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     object-fit: contain;
-  }
-  .btn-down {
-    display: none;
   }
   .event-flex {
     gap: 15px;
@@ -1183,15 +1199,27 @@ ul.footer-nav {
     margin-top: 35px;
   }
   .footer-flex {
-    gap: 120px;
+    gap: 100px;
   }
   nav {
     margin-left: 0;
   }
 }
 @media (max-width: 980px) {
-  .banner-img {
-    height: 94%;
+  .banner {
+    margin-bottom: 25px;
+  }
+  .banner-content {
+    padding-top: 75px;
+  }
+  .btn-down {
+    display: none;
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+  .banner-bg {
+    position: relative;
   }
   .about-box {
     flex-wrap: wrap;
@@ -1199,15 +1227,7 @@ ul.footer-nav {
     height: 100%;
   }
 }
-@media (min-width: 834px) {
-  .button a img {
-    display: none;
-  }
-}
 @media (max-width: 834px) {
-  .banner-title {
-    font-size: 26px;
-  }
   .banner-img {
     height: 93%;
   }
@@ -1216,6 +1236,9 @@ ul.footer-nav {
     gap: 10px;
     justify-content: space-between;
   }
+  .event-name {
+    font-size: 22px;
+  }
   .event-first,
   .event-second {
     width: 49%;
@@ -1223,43 +1246,30 @@ ul.footer-nav {
   }
   .event-third {
     width: 100%;
-    background-image: url(../img/event/yoga_mob2.png);
-    height: 60vw;
-  }
-  .button span {
-    display: none;
+    background-image: url(../img/event/yoga_mob1.png);
+    height: 50vw;
   }
   .button {
-    cursor: pointer;
-    position: absolute;
-    opacity: 1;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    height: 6%;
-    width: 12%;
-    padding: 0;
+    display: none;
   }
-  .event-third .button {
-    width: 6%;
-    height: 6%;
-  }
-  .button a img {
+  .button-plus {
     display: block;
-    width: 70%;
-    height: 70%;
+    background-image: url(../img/add.png);
+    width: 30px;
+    height: 30px;
+    border: none;
     position: absolute;
-    bottom: 5px;
-    right: 6px;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
   }
   .type {
-    font-size: 16px;
+    font-size: 14px;
     left: 0;
     right: auto;
     padding: 5px 10px;
     opacity: 1;
   }
-  .box-gradient:hover .button,
   .box-gradient:hover .type {
     opacity: 1;
   }
@@ -1287,8 +1297,16 @@ ul.footer-nav {
     width: 78px;
     height: 24px;
   }
-  .insta-icon,
+  .header-links {
+    gap: 20px;
+  }
   .fb-icon {
+    background-image: url(../img/FB26.svg);
+    width: 26px;
+    height: 26px;
+  }
+  .insta-icon {
+    background-image: url(../img/IN26.svg);
     width: 26px;
     height: 26px;
   }
@@ -1375,6 +1393,12 @@ ul.footer-nav {
   }
 }
 @media (max-width: 667px) {
+  h1 {
+    font-size: 26px;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
   .banner-img {
     height: 91%;
   }
@@ -1392,6 +1416,15 @@ ul.footer-nav {
   }
   .event-name {
     font-size: 16px;
+  }
+  .mail-box {
+    max-width: 360px;
+  }
+  .mail-title::before {
+    width: 31px;
+    height: 31px;
+    left: 41px;
+    top: -11px;
   }
   .about-text {
     margin: 0;
@@ -1413,7 +1446,6 @@ ul.footer-nav {
 }
 @media (max-width: 650px) {
   .banner-info,
-  h1,
   h2 {
     font-size: 26px;
   }
@@ -1434,18 +1466,12 @@ ul.footer-nav {
   .plan-date {
     margin-bottom: 23px;
   }
-  .mail-title::before {
-    width: 31px;
-    height: 31px;
-    left: 15px;
-    top: -15px;
-  }
   .about-favor {
     grid-template-columns: 1fr;
     gap: 0;
   }
   .about-img {
-    height: 208px;
+    height: 50vw;
   }
   .plan-grid-item,
   .plan-grid-active-item {
@@ -1481,17 +1507,6 @@ ul.footer-nav {
   .banner-img {
     height: 86.5%;
   }
-  .event-third .button {
-    width: 6%;
-    height: 6%;
-  }
-  .button a img {
-    bottom: 3px;
-    right: 3px;
-  }
-  .mail-title::before {
-    left: 40px;
-  }
   .footer-nav a,
   .footer-email-address {
     font-size: 12px;
@@ -1503,23 +1518,19 @@ ul.footer-nav {
   }
 }
 @media (max-width: 480px) {
+  .banner-title {
+    font-size: 20px;
+  }
   .event-first,
   .event-second {
     height: 75vw;
   }
   .event-third {
     height: 83vw;
+    background-image: url(../img/event/yoga_mob2.png);
   }
   .footer-nav {
-    gap: 35px;
-  }
-  .mail-title::before {
-    left: 7px;
-  }
-}
-@media (max-width: 436px) {
-  .mail-title::before {
-    left: 53px;
+    gap: 20px;
   }
 }
 @media (max-width: 406px) {
@@ -1533,19 +1544,16 @@ ul.footer-nav {
   .about-info {
     margin-bottom: 100px;
   }
+  .mail-title::before {
+    left: 30px;
+  }
 }
 @media (max-width: 392px) {
-  .banner-content {
-    padding-top: 32px;
-  }
   .event {
     margin-bottom: 79px;
   }
   .event-title {
     margin-bottom: 22px;
-  }
-  .banner-title {
-    font-size: 20px;
   }
   .banner-info h1,
   h2 {
@@ -1553,9 +1561,6 @@ ul.footer-nav {
   }
   .banner-text {
     font-size: 15px;
-  }
-  .mail-title::before {
-    left: 35px;
   }
 }
 @media (max-width: 360px) {
@@ -1581,6 +1586,10 @@ ul.footer-nav {
   .mail {
     margin-bottom: 20px;
   }
+  .mail-title::before {
+    left: -14px;
+    top: -17px;
+  }
   .date {
     margin: 0;
     opacity: 0.6;
@@ -1590,8 +1599,10 @@ ul.footer-nav {
     margin: 0;
     margin-bottom: 42px;
   }
+}
+@media (max-width: 352px) {
   .mail-title::before {
-    left: -15px;
+    left: 35px;
     top: -15px;
   }
 }
@@ -1613,16 +1624,12 @@ ul.footer-nav {
     grid-template-columns: 15% 80%;
     grid-template-rows: 15% 55%;
   }
-  .mail-title::before {
-    left: 20px;
-    top: -16px;
-  }
   label,
   .mail-data {
     font-size: 10px;
   }
-  .footer-nav {
-    gap: 20px;
+  .mail-title::before {
+    left: 20px;
   }
   .footer-flex {
     gap: 100px;
