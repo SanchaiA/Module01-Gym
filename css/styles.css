@@ -890,7 +890,6 @@ ul.footer-nav {
 .header-burger-links {
   display: flex;
   gap: 20px;
-  align-items: right;
   outline: none;
   border: none;
   position: absolute;
@@ -926,7 +925,7 @@ ul.footer-nav {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
   height: 575px;
   background-color: #f3f3f3;
   text-align: center;
@@ -988,7 +987,7 @@ ul.footer-nav {
 .popup-mail-input {
   display: block;
   border: none;
-  width: 470px;
+  max-width: 470px;
   height: 65px;
   padding-left: 25px;
 }
@@ -996,7 +995,7 @@ ul.footer-nav {
   display: block;
   border: none;
   margin-top: 20px;
-  width: 470px;
+  max-width: 470px;
   height: 65px;
   padding-left: 25px;
 }
@@ -1022,7 +1021,7 @@ ul.footer-nav {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 40px;
-  width: 500px;
+  max-width: 500px;
   height: 65px;
   padding: 0;
 }
@@ -1157,6 +1156,9 @@ ul.footer-nav {
   .footer-email-address {
     left: 15px;
   }
+  .popup-title::before {
+    left: 80px;
+  }
 }
 @media (max-width: 1115px) {
   .about-favor {
@@ -1198,6 +1200,9 @@ ul.footer-nav {
   nav {
     margin-left: 0;
   }
+  .popup-title::before {
+    left: 45px;
+  }
 }
 @media (max-width: 980px) {
   .banner {
@@ -1219,6 +1224,10 @@ ul.footer-nav {
     flex-wrap: wrap;
     align-items: stretch;
     height: 100%;
+  }
+  .popup-title::before {
+    left: 25px;
+    top: -35px;
   }
 }
 @media (max-width: 834px) {
@@ -1424,6 +1433,10 @@ ul.footer-nav {
     left: 41px;
     top: -11px;
   }
+  .popup-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .about-text {
     margin: 0;
   }
@@ -1435,6 +1448,19 @@ ul.footer-nav {
     order: 3;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .popup-title,
+  .popup-subtitle {
+    font-size: 20px;
+  }
+  .popup-text {
+    font-size: 16px;
+  }
+  .popup-title::before {
+    width: 31px;
+    height: 31px;
+    left: 25px;
+    top: -18px;
   }
 }
 @media (min-width: 650px) {
@@ -1634,5 +1660,9 @@ ul.footer-nav {
   }
   .footer-links {
     gap: 15px;
+  }
+  .popup-title,
+  .popup-subtitle {
+    font-size: 18px;
   }
 }
