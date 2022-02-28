@@ -1174,6 +1174,9 @@ ul.footer-nav {
     align-items: stretch;
     height: 100%;
   }
+  .plan-grid {
+    grid-template-rows: 300px 0px 70px 280px;
+  }
   .plan-item-box {
     max-width: 250px;
   }
