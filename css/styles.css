@@ -343,13 +343,16 @@ h1.plan-title {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px 42px 70px 280px;
   gap: 20px;
+  overflow: hidden;
 }
 .plan-grid-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgba(43, 53, 65, 0.2);
-  padding: 20px 27px 0px 30px;
+  padding: 20px 27px 20px 30px;
+  overflow: hidden;
+  position: relative;
 }
 .plan-item-box {
   display: flex;
@@ -358,12 +361,29 @@ h1.plan-title {
   flex-direction: column;
   gap: 20px;
   justify-content: end;
+  overflow: hidden;
+  position: absolute;
+  bottom: -55px;
+  transition: 0.2s linear;
+}
+.plan-grid-item:nth-child(5) .plan-item-box {
+  bottom: -78px;
+}
+.plan-grid-item:nth-child(5) .plan-item-box:hover {
+  bottom: 0px;
+}
+.plan-item-box:hover {
+  bottom: 0px;
 }
 .plan-item-text {
   overflow: hidden;
+  /*
   max-height: 0;
-  transition: 0.3s linear;
+  transition: 0.3s linear;*/
   line-height: 150%;
+  visibility: hidden;
+  opacity: 0;
+  margin: 13px;
 }
 p.plan-item-text {
   margin: 0;
@@ -375,6 +395,8 @@ p.plan-item-text {
 .plan-grid-item:hover .plan-item-text {
   max-height: 400px;
   margin-bottom: 15px;
+  visibility: visible;
+  opacity: 1;
 }
 .plan-date {
   text-align: right;
@@ -418,10 +440,13 @@ p.plan-item-text {
 .plan-grid-active-item .plan-item-text {
   max-height: 400px;
   margin-bottom: 15px;
+  visibility: visible;
+  opacity: 1;
 }
 .plan-grid-active-item .plan-item-box {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  transition: 0.2s linear;
 }
 .plan-grid-active-item {
   position: relative;
@@ -1338,6 +1363,11 @@ ul.footer-nav {
   .banner-img {
     top: 30px;
   }
+  p.plan-item-title,
+  p.plan-item-text,
+  p.plan-date {
+    font-size: 16px;
+  }
 }
 @media (max-width: 667px) {
   h1 {
@@ -1431,19 +1461,21 @@ ul.footer-nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    overflow: hidden;
   }
   .plan-grid-item,
   .plan-grid-active-item {
-    padding: 25px 22px 10px 18px;
+    padding: 25px 22px 25px 18px;
   }
-  .plan-item-box {
+  .plan-item-box,
+  .plan-grid-item:nth-child(5) .plan-item-box {
     display: grid;
+    position: relative;
     max-width: 100%;
     height: 100%;
-    gap: 20px;
     grid-template-columns: 12% 80%;
     grid-template-rows: 10% 55%;
-    align-items: start;
+    bottom: -35px;
   }
   .plan-grid-active-item .plan-item-box {
     display: grid;
@@ -1465,6 +1497,9 @@ ul.footer-nav {
   .plan-grid-active-item .plan-item-box .plan-item-text,
   .plan-item-box .plan-item-text {
     grid-row: 2 / 3;
+    margin-bottom: -15px;
+  }
+  .plan-grid-item:hover .plan-item-text {
     margin-bottom: 0;
   }
   .about-favor {
@@ -1505,6 +1540,13 @@ ul.footer-nav {
     height: 83vw;
     background-image: url(../img/event/yoga_mob2.png);
   }
+  .plan-item-box,
+  .plan-grid-active-item .plan-item-box,
+  .plan-grid-item:nth-child(5) .plan-item-box {
+    grid-template-columns: 15% 80%;
+    grid-template-rows: 22% 55%;
+    gap: 10px;
+  }
   .footer-nav {
     gap: 20px;
   }
@@ -1543,6 +1585,13 @@ ul.footer-nav {
   }
 }
 @media (max-width: 386px) {
+  .plan-item-box,
+  .plan-grid-active-item .plan-item-box,
+  .plan-grid-item:nth-child(5) .plan-item-box {
+    grid-template-columns: 19% 76%;
+    grid-template-rows: 15% 55%;
+    gap: 10px;
+  }
   p.plan-item-title,
   p.plan-item-text,
   p.plan-date {
@@ -1550,7 +1599,10 @@ ul.footer-nav {
   }
   .plan-grid-item,
   .plan-grid-active-item {
-    padding: 15px 22px 15px 18px;
+    padding: 15px 22px 10px 10px;
+  }
+  .plan-item-box {
+    bottom: -18px;
   }
 }
 @media (max-width: 360px) {
@@ -1610,10 +1662,6 @@ ul.footer-nav {
   }
   .event-third .event-box {
     padding: 12px 90px 0 10px;
-  }
-  .plan-item-box {
-    grid-template-columns: 15% 80%;
-    grid-template-rows: 15% 55%;
   }
   .mail-title::before {
     left: 20px;
