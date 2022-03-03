@@ -1587,7 +1587,7 @@ ul.footer-nav {
     width: 48%;
   }
   .footer-nav a,
-  .footer-email-address {
+  .footer-email-address a {
     font-size: 12px;
   }
   .footer-rights,
@@ -1730,10 +1730,10 @@ ul.footer-nav {
     left: 20px;
   }
   .footer-flex {
-    gap: 100px;
+    gap: 75px;
   }
   .footer-links {
-    gap: 15px;
+    gap: 20px;
   }
   .popup-title,
   .popup-subtitle {
