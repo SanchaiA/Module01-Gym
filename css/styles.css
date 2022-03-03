@@ -1183,6 +1183,9 @@ ul.footer-nav {
     align-items: stretch;
     height: 100%;
   }
+  .about-favor {
+    gap: 0;
+  }
   .plan-grid {
     grid-template-rows: 300px 0px 70px 280px;
   }
