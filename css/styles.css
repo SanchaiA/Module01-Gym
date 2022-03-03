@@ -262,10 +262,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 29px 45px 0 29px;
-}
-.event-second .event-box {
-  padding: 29px 100px 0 29px;
+  padding: 30px;
 }
 .date {
   font-weight: 700;
@@ -372,13 +369,13 @@ h1.plan-title {
   position: absolute;
   bottom: -55px;
   transition: 0.2s linear;
-}
-.plan-grid-item:nth-child(5) .plan-item-box {
+} /*
+.plan-grid-item:nth-child(5) .plan-item-text {
   bottom: -78px;
 }
-.plan-grid-item:nth-child(5) .plan-item-box:hover {
+.plan-grid-item:nth-child(5) .plan-item-text:hover {
   bottom: 0px;
-}
+}*/
 .plan-item-box:hover {
   bottom: 0px;
 }
@@ -796,13 +793,13 @@ ul.footer-nav {
   justify-content: space-between;
   align-items: center;
 }
-.footer-email-address {
+.footer-email-address a {
   font-size: 16px;
   font-weight: 700;
   z-index: 0;
   position: relative;
 }
-.footer-email-address::before {
+.footer-email-address a::before {
   position: absolute;
   content: "";
   background: #fbf138;
@@ -1335,6 +1332,9 @@ ul.footer-nav {
   h1 {
     font-size: 26px;
   }
+  p.plan-item-text {
+    font-size: 12px;
+  }
   .plan-period {
     font-size: 26px;
   }
@@ -1423,7 +1423,6 @@ ul.footer-nav {
 }
 @media (max-width: 756px) {
   p.plan-item-title,
-  p.plan-item-text,
   p.plan-date {
     font-size: 16px;
   }
@@ -1432,50 +1431,12 @@ ul.footer-nav {
   }
 }
 @media (max-width: 683px) {
+  .plan-item-box,
   .plan-grid-item:nth-child(5) .plan-item-box {
-    bottom: -78px;
+    bottom: -45px;
   }
 }
-@media (max-width: 667px) {
-  .banner {
-    margin-bottom: 160px;
-  }
-  .btn-down {
-    display: none;
-  }
-  .banner-container,
-  .banner-content {
-    position: relative;
-    bottom: 0;
-    margin-top: 65px;
-  }
-  .banner-bg {
-    max-width: 100%;
-    left: 0;
-    top: 160px;
-    height: 70vw;
-  }
-  .banner-img {
-    height: 76%;
-  }
-  .banner-btn,
-  .sign-up-btn {
-    display: block; /*
-    width: 100%;*/
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .event {
-    margin-bottom: 75px;
-  }
-  .event-name {
-    font-size: 16px;
-  }
-  .popup-text {
-    margin-left: 0;
-    margin-right: 0;
-  }
+@media (max-width: 670px) {
   .about-text {
     margin: 0;
   }
@@ -1503,6 +1464,51 @@ ul.footer-nav {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 0px;
+    display: block; /*
+    width: 100%;*/
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 667px) {
+  .banner {
+    margin-bottom: 160px;
+  }
+  .btn-down {
+    display: none;
+  }
+  .banner-container,
+  .banner-content {
+    position: relative;
+    bottom: 0;
+    margin-top: 65px;
+  }
+  .banner-bg {
+    max-width: 100%;
+    left: 0;
+    top: 160px;
+    height: 70vw;
+  }
+  .banner-img {
+    height: 76%;
+  }
+  .banner-btn {
+    display: block; /*
+    width: 100%;*/
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .event {
+    margin-bottom: 75px;
+  }
+  .event-name {
+    font-size: 16px;
+  }
+  .popup-text {
+    margin-left: 0;
+    margin-right: 0;
   }
   .popup-title,
   .popup-subtitle {
@@ -1627,7 +1633,7 @@ ul.footer-nav {
   .plan-grid-active-item .plan-item-box,
   .plan-grid-item:nth-child(5) .plan-item-box {
     grid-template-columns: 15% 80%;
-    grid-template-rows: 22% 55%;
+    grid-template-rows: 24% 65%;
     gap: 10px;
   }
   .footer-nav {
@@ -1665,8 +1671,8 @@ ul.footer-nav {
   .plan-item-box,
   .plan-grid-active-item .plan-item-box,
   .plan-grid-item:nth-child(5) .plan-item-box {
-    grid-template-columns: 19% 76%;
-    grid-template-rows: 20% 55%;
+    grid-template-columns: 22% 73%;
+    grid-template-rows: 14% 60%;
     gap: 10px;
   }
   p.plan-item-title,
