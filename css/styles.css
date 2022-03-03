@@ -630,6 +630,7 @@ label,
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 215px 120px auto;
   align-items: start;
+  gap: 20px;
 }
 .about-info {
   grid-column: 1 / 2;
@@ -1168,6 +1169,7 @@ ul.footer-nav {
   .about-favor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .favor-item,
   .favor-item:nth-child(4) {
@@ -1182,9 +1184,6 @@ ul.footer-nav {
     flex-wrap: wrap;
     align-items: stretch;
     height: 100%;
-  }
-  .about-favor {
-    gap: 0;
   }
   .plan-grid {
     grid-template-rows: 300px 0px 70px 280px;
