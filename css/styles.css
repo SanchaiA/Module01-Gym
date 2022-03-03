@@ -1111,6 +1111,12 @@ ul.footer-nav {
   .header nav {
     margin-left: 30px;
   }
+  .banner {
+    margin-bottom: 60px;
+  }
+  .btn-down {
+    bottom: 0;
+  }
   .banner-bg {
     gap: 10px;
     max-width: 50%;
@@ -1218,11 +1224,12 @@ ul.footer-nav {
   }
 }
 @media (max-width: 980px) {
+  .btn-down {
+    height: 39px;
+    width: 37px;
+  }
   .banner-title {
     font-size: 35px;
-  }
-  .banner {
-    margin-bottom: 160px;
   }
   .banner-box {
     margin-left: 0;
@@ -1235,9 +1242,6 @@ ul.footer-nav {
   .banner-info,
   h2 {
     font-size: 26px;
-  }
-  .btn-down {
-    display: none;
   }
   .plan-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1333,7 +1337,7 @@ ul.footer-nav {
     font-size: 26px;
   }
   .banner-content {
-    bottom: 18.5vw;
+    bottom: 25vw;
   }
   .banner-bg {
     gap: 10px;
@@ -1423,6 +1427,12 @@ ul.footer-nav {
   }
 }
 @media (max-width: 667px) {
+  .banner {
+    margin-bottom: 160px;
+  }
+  .btn-down {
+    display: none;
+  }
   .banner-container,
   .banner-content {
     position: relative;
@@ -1433,9 +1443,10 @@ ul.footer-nav {
     max-width: 100%;
     left: 0;
     top: 160px;
+    height: 70vw;
   }
   .banner-img {
-    height: 95%;
+    height: 76%;
   }
   .banner-btn,
   .sign-up-btn {
@@ -1646,7 +1657,7 @@ ul.footer-nav {
   .plan-grid-active-item .plan-item-box,
   .plan-grid-item:nth-child(5) .plan-item-box {
     grid-template-columns: 19% 76%;
-    grid-template-rows: 15% 55%;
+    grid-template-rows: 20% 55%;
     gap: 10px;
   }
   p.plan-item-title,
@@ -1656,10 +1667,13 @@ ul.footer-nav {
   }
   .plan-grid-item,
   .plan-grid-active-item {
-    padding: 15px 22px 10px 10px;
+    padding: 15px 15px 10px 10px;
   }
   .plan-item-box {
     bottom: -18px;
+  }
+  .plan-item-title {
+    margin-top: 0;
   }
 }
 @media (max-width: 360px) {
