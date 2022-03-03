@@ -1374,9 +1374,14 @@ ul.footer-nav {
   .plan-grid {
     grid-template-rows: 345px 220px 220px;
   }
-  .plan-item-box,
-  .plan-grid-item:nth-child(5) .plan-item-box {
+  .plan-item-box {
     bottom: -25px;
+  }
+  .plan-grid-item:nth-child(5) .plan-item-box {
+    bottom: -45px;
+  }
+  .plan-grid-item:nth-child(5):hover .plan-item-box {
+    bottom: 0px;
   }
   .mail-form {
     flex-direction: column;
