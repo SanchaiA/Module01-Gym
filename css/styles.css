@@ -1553,7 +1553,7 @@ ul.footer-nav {
     position: relative;
     max-width: 100%;
     height: 100%;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 15% 80%;
     grid-template-rows: 20% 55%;
   }
   .plan-grid-active-item .plan-item-box .plan-img-mob,
@@ -1651,10 +1651,9 @@ ul.footer-nav {
 }
 @media (max-width: 386px) {
   .plan-item-box,
-  .plan-grid-active-item .plan-item-box /*,
-  .plan-grid-item:nth-child(5) .plan-item-box*/ {
+  .plan-grid-active-item .plan-item-box {
     grid-template-columns: 22% 73%;
-    grid-template-rows: 14% 60%;
+    grid-template-rows: 14% 70%;
     gap: 10px;
   }
   p.plan-item-title,
