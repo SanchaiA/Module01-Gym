@@ -1405,7 +1405,7 @@ ul.footer-nav {
 @media (max-width: 756px) {
   p.plan-item-title,
   p.plan-date {
-    font-size: 16px;
+    font-size: 14px;
   } /*
   .plan-grid-item:nth-child(5) .plan-item-box {
     bottom: -55px;
